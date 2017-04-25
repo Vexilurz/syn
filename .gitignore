@@ -1,0 +1,4 @@
+*.*
+!.gitignore
+!Hl/*.*
+!README.md
