@@ -1,0 +1,22 @@
+--------------------------------------------------------------------------------------
+Some things that need to know, to make your new written Highlighter fully used by Syn:
+--------------------------------------------------------------------------------------
+
+ · Styles which describe comment or string varable must have names starting as 'string', 'remark', 'comment'.
+   For example 'Strings " ... "' or 'Remarks //'
+
+ · File extentions are case-insensitive list without dots, separated by spaces
+
+ · If there was found user variables or functions in CodeExplorer, then Syn try to add them to HL. It search for styles which names starts as 'function' or 'var', and check if those styles are of type KeyList. If ok, then scanned function/variables added to those styles, so paint must color user funcs/vars properly.
+
+ · In CustomData for now used such string variables:
+   'CommentBlockStar'- added to start of commented block
+   'CommentBlockMid' - added to each line of commented block
+   'CommentBlockEnd' - added to end of commented block
+   'CommentLine'     - added to start of each line
+   'FunctionDetect'  - RegEx string to find user functions
+   'VariableDetect'  - RegEx string to find user variables
+   'IncludeDetect'   - RegEx string to find included/used/required/imported files
+
+ · You can use style which name starts as 'link' to highlight text, that possible to run. There used ShellExecute function for executing (analog Start->Run), so all links that explorer recognize are valid. Example of this can be found in txt.hgl for web-links. Try Ctrl-click here: www.sepa.spb.ru/?syn_eng or file://c:/
+--------------------------------------------------------------------------------------

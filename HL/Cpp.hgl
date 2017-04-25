@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="C++ Source" Extensions="C CPP H HPP CXX" Version="1" Revision="3" Sample="// Syntax Highlighting
+#include &lt;iostream.h&gt;
+
+int a[] = {1, 2, 3};
+void __fastcall TForm1::Button1Click(TObject *Sender)
+{
+  int number = 123456;
+  char c = 'a';
+  Caption = &quot;The number is \&quot;&quot; + IntToStr(i) + &quot;\&quot;&quot;;
+  char text = &quot;This is very big text, that cannot be\
+ placed in only one string. That's why we use slash\
+ (\\) at the end of the string!&quot;.
+  for (int i = 0; i &lt;= number; i++)
+  {
+    x -= 0xff;
+    x -= 023;
+    x += 1.0;
+    x += @; /* illegal character */
+  }
+  #ifdef USE_ASM
+    asm
+    {
+      ASM MOV AX, 0x1234
+      ASM MOV i, AX
+    }
+  #endif
+}" History=""/>
+			<Author Name="Vitalik" Mail="v-e-t-a-l@ukr.net; vetal-x@mail.ru" Web="" Copyright="© Vitaly Lyapota, 2004" Company="N/A" Remark="Based on Vitaly Nevzorov highlighter"/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="SyntaxColoring" CaseSensitive="True" Style="">
+			<Attributes Foreground="clBlack" Background="clWhite"/>
+			<Delimiters Value="!&quot;%&amp;'()*+,-./:;&lt;=&gt;?@[\]^{|}~"/>
+			<SubRules>
+				<Range Name="Remarks //" Style="">
+					<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="//"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Remarks /*..*/" Style="">
+					<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="/*" Close="*/"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Strings &quot;..&quot;" Style="">
+					<Attributes Foreground="clFuchsia" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="&quot;" Close="&quot;"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="Continue" Style="">
+							<Attributes Foreground="clRed" Background="clWhite" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken FinishOnEol="True" StartLine="" PartOfTerm="Right"/>
+							<CloseToken StartLine="" PartOfTerm="False"/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="\"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="Escape" Enabled="True" Style="" Words="\&quot;
+\\
+">
+							<Attributes Foreground="clFuchsia" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="Chars '..'" Style="">
+					<Attributes Foreground="clFuchsia" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="'" Close="'"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Hex number" Style="">
+					<Attributes Foreground="clMaroon" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="0x"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="Keywords 1" Enabled="True" Style="" Words="bool
+char
+class
+const
+case
+catch
+const_cast
+double
+default
+do
+delete
+dynamic_cast
+else
+enum
+explicit
+export
+extern
+for
+false
+float
+friend
+if
+inline
+int
+long
+mutable
+new
+namespace
+operator
+protected
+private
+public
+reinterpret_cast
+return
+short
+signed
+sizeof
+static
+struct
+static_cast
+switch
+template
+throw
+true
+typedef
+typename
+this
+try
+typeid
+union
+unsigned
+using
+virtual
+void
+volatile
+wchar_t
+while
+">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Keywords 2" Enabled="True" Style="" Words="asm
+auto
+break
+continue
+goto
+register
+">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Hash directives" Enabled="True" Style="" Words="#define
+#error
+#include
+#elif
+#if
+#line
+#else
+#ifdef
+#pragma
+#endif
+#ifndef
+#undef
+">
+					<Attributes Foreground="$00FF0080" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Operators" Enabled="True" Style="" Words="+
+-
+=
+/
+%
+&amp;
+&gt;
+&lt;
+^
+!
+|
+*
+^
+:
+">
+					<Attributes Foreground="clPurple" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Punctuators" Enabled="True" Style="" Words="{
+}
+;
+(
+)
+,
+[
+]
+.
+">
+					<Attributes Foreground="clPurple" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Number '0'" Enabled="True" Style="" Words="0
+">
+					<Attributes Foreground="clMaroon" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<Set Name="Illegal characters" Enabled="True" Style="" Symbols="#@ЁёАБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя" Quantity="0">
+					<Attributes Foreground="clRed" Background="clWhite" ParentBackground="True"/>
+				</Set>
+				<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+					<Attributes Foreground="clMaroon" Background="clWhite" ParentBackground="True"/>
+				</Set>
+				<Set Name="Floats" Enabled="True" Style="" Symbols=".0123456789" Quantity="0">
+					<Attributes Foreground="clMaroon" Background="clWhite" ParentBackground="True"/>
+				</Set>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="{}" Type="0">
+			<OpenToken Symbol="{"/>
+			<CloseToken Symbol="}"/>
+			<Properties AddEnding="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="Remarks /*..*/" Type="1">
+			<OpenToken Symbol="/*"/>
+			<CloseToken Symbol="*/"/>
+			<Properties/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="#ifdef" Type="1">
+			<OpenToken Symbol="#IFDEF"/>
+			<CloseToken Symbol="#ENDIF"/>
+			<Properties/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="CommentBlockStart" Value="/*"/>
+		<Entry Name="CommentBlockMid" Value="# "/>
+		<Entry Name="CommentBlockEnd" Value="*/"/>
+		<Entry Name="FunctionDetect" Value="^\s*?(?P&lt;type&gt;[\w\*]+)(\s+\w+)?\s+(?P&lt;name&gt;[\w\~][\w\:]+)\s*?(?P&lt;param&gt;\(([^\(\)!=&lt;&gt;]+\s[^\(\)!=&lt;&gt;\s]+\s*|\s*void\s*)\))\s*?"/>
+		<Entry Name="VariableDetect" Value="([a-z]+)\s+([a-z_][a-z0-9_]*)(\[[^\]+]\])?"/>
+		<Entry Name="CommentLine" Value="//"/>
+	</CustomData>
+</SynUniHighlighter>

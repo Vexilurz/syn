@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="CSS" Extensions="css" Version="1" Revision="0" Sample="
+@import &quot;mystyle.css&quot;;  // Загрука CSS из файла
+body {font-family: Tahoma, Verdana, Arial, sans-serif; font-size: 8pt}
+A:link {COLOR: #d9ac25; TEXT-DECORATION: underline}
+H1.class_name {font-size: inherit; color: #000099; made-up-property: 1}
+.WhiteTable {FONT-SIZE: 8pt; WIDTH: 100% !important}
+#sections ul {list-style:none; margin:50px 0; padding:0} &lt;!-- По ID --&gt;
+SPAN[class=example] { color: blue; } /* По значению атрибута */
+//--&gt;
+&lt;/style&gt;" History=""/>
+			<Author Name="Sepa" Mail="sepich@rambler.ru" Web="sepa.spb.ru" Copyright="SynTree (c) 2006" Company="" Remark=""/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="SyntaxColoring" Style="Root">
+			<Attributes Foreground="clFuchsia" Background="clWhite"/>
+			<Delimiters Value="!&quot;#$%'()*+,-.:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="css {..}" Style="{..}">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="{" Close="}"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="css Remarks /*..*/" Style="Remarks /*..*/">
+							<Attributes Foreground="clGray" Background="clWhite" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="/*" Close="*/"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="CSS Props" Enabled="True" Style="" Words="azimuth
+background
+background-attachment
+background-color
+background-image
+background-position
+background-repeat
+behavior
+border
+border-bottom
+border-bottom-color
+border-bottom-style
+border-bottom-width
+border-collapse
+border-color
+border-left
+border-left-color
+border-left-style
+border-left-width
+border-right
+border-right-color
+border-right-style
+border-right-width
+border-spacing
+border-style
+border-top
+border-top-color
+border-top-style
+border-top-width
+border-width
+bottom
+caption-side
+clear
+clip
+color
+content
+counter-increments
+counter-reset
+cue
+cue-after
+cue-before
+cursor
+direction
+display
+elevation
+empty-cells
+filter
+float
+font
+font-family
+font-size
+font-size-adjust
+font-stretch
+font-style
+font-variant
+font-weight
+height
+layout-grid
+layout-grid-char
+layout-grid-char-spacing
+layout-grid-line
+layout-grid-mode
+layout-grid-type
+left
+letter-spacing
+line-height
+list-style
+list-style-image
+list-style-position
+list-style-type
+margin
+margin-bottom
+margin-left
+margin-right
+margin-top
+marker-offset
+marks
+max-height
+max-width
+min-height
+min-width
+orphans
+outline
+outline-color
+outline-style
+outline-width
+overflow
+padding
+padding-bottom
+padding-left
+padding-right
+padding-top
+page
+page-break-after
+page-break-before
+page-break-inside
+pause
+pause-after
+pause-before
+pitch
+pitch-during
+pitch-range
+position
+quotes
+richness
+right
+ruby-align
+ruby-overhang
+ruby-position
+scrollbar-3dlight-color
+scrollbar-arrow-color
+scrollbar-darkshadow-color
+scrollbar-face-color
+scrollbar-shadow-color
+size
+speak
+speak-header
+speak-numeral
+speak-punctuation
+speech-rate
+stress
+table-layout
+text-align
+text-decoration
+text-indent
+text-justify
+text-shadow
+text-transform
+top
+unicode-bidi
+vertical-align
+visibility
+voice-family
+volume
+widows
+width
+word-spacing
+z-index
+">
+							<Attributes Foreground="clNavy" Background="clWhite" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="css KeyWords" Enabled="True" Style="" Words="inherit
+important
+!
+">
+							<Attributes Foreground="clRed" Background="clNone" Style="B"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="css Remarks /*..*/" Style="Remarks /*..*/">
+					<Attributes Foreground="clGray" Background="clWhite" ParentBackground="True" Style="I"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="/*" Close="*/"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="css Remarks //" Style="Remarks //">
+					<Attributes Foreground="clGray" Background="clWhite" ParentBackground="True" Style="I"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="//"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="css Close" Style="Close">
+					<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True" Style="I"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties AllowPredClose="True"/>
+					<MultiTokens>
+						<Tokens Open="//--&gt;" Close="&lt;/style&gt;"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="css Class_def" Style="Class_def">
+					<Attributes Foreground="clFuchsia" Background="clWhite" ParentBackground="True" Style="B"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="."/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="css Link_def" Style="Link_def">
+					<Attributes Foreground="clFuchsia" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="#"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="css [...]" Style="[...]">
+					<Attributes Foreground="clGray" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="[" Close="]"/>
+					</MultiTokens>
+					<SubRules>
+						<KeyList Name="css Attrs" Enabled="True" Style="" Words="abbr
+above
+accept
+accept-charset
+accesskey
+action
+align
+alink
+alt
+archive
+axis
+background
+balance
+behavior
+below
+bgcolor
+bgproperties
+border
+bordercolor
+bordercolordark
+bordercolorlight
+bottommargin
+cellpadding
+cellspacing
+challenge
+char
+charoff
+charset
+checked
+cite
+class
+classid
+clear
+clip
+code
+codebase
+codetype
+color
+cols
+colspan
+columns
+compact
+content
+controls
+coords
+data
+datafld
+dataformatas
+datapagesize
+datasrc
+datetime
+declare
+defer
+dir
+direction
+disabled
+domain
+dynsrc
+emptyok
+enctype
+event
+face
+for
+format
+forua
+frame
+frameborder
+framespacing
+gutter
+headers
+height
+hidden
+href
+hreflang
+hspace
+http-equiv
+id
+iname
+ismap
+ivalue
+label
+lang
+language
+left
+leftmargin
+link
+localsrc
+longdesc
+loop
+loopdelay
+lowsrc
+marginheight
+marginwidth
+maxlenght
+mayscript
+media
+method
+methods
+mode
+multiple
+name
+newcontext
+nohref
+noresize
+noshade
+nowrap
+object
+onenterbackward
+onenterforward
+onpick
+ontimer
+optional
+ordered
+pagex
+pagey
+palette
+path
+pluginspage
+pluginurl
+point-size
+profile
+prompt
+property
+readonly
+rel
+rev
+rightmargin
+rows
+rowspan
+rules
+scheme
+scope
+scroll
+scrollamount
+scrolldelay
+scrolling
+selected
+sendreferer
+shape
+size
+span
+src
+stanby
+start
+style
+summary
+suppress
+tabindex
+target
+text
+title
+top
+topmargin
+truespeed
+type
+units
+url
+urn
+usemap
+valign
+value
+valuetype
+version
+visibility
+vlink
+volume
+vspace
+weight
+width
+wrap
+z-index
+">
+							<Attributes Foreground="clNavy" Background="clWhite" ParentBackground="True" Style="B"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="css Comments" Style="Comments">
+					<Attributes Foreground="clGray" Background="clWhite" ParentBackground="True" Style="I"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;!--" Close="--&gt;"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="css KW" Enabled="True" Style="" Words="@import
+">
+					<Attributes Foreground="$006200C4" Background="clWhite" ParentBackground="True" Style="B"/>
+				</KeyList>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="css {}" Type="0">
+			<OpenToken Symbol="{"/>
+			<CloseToken Symbol="}"/>
+			<Properties AddEnding="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="css Remarks /*..*/" Type="1">
+			<OpenToken Symbol="/*"/>
+			<CloseToken Symbol="*/"/>
+			<Properties AddEnding="True" AllowNoSubs="True"/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="CommentBlockStart" Value="/*"/>
+		<Entry Name="CommentBlockMid" Value=" "/>
+		<Entry Name="CommentBlockEnd" Value="*/"/>
+		<Entry Name="FunctionDetect" Value="(.*?)([a-z0-9\.\, \:]+)\{"/>
+		<Entry Name="CommentLine" Value="//"/>
+	</CustomData>
+</SynUniHighlighter>

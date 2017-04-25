@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="Forth" Extensions="f fpm kf" Version="1" Revision="3" Sample="VARIABLE A
+1 CONSTANT _1
+256 ARRAY testArr
+: test
+ 1 2 3 DUP DROP + * DROP
+ 256 0 DO
+  I MOD 2 + IF 0 ELSE 1 THEN testArr I -TH !
+ LOOP
+;" History=""/>
+			<Author Name="whiteTigr" Mail="" Web="" Copyright="(c) whiteTigr, 2009" Company="msyst" Remark="Based on Vitaly Nevzorov highlighter"/>
+		</Info>
+		<Schemes/>
+		<Editor SelectedBackground="clSilver"/>
+		<MainRules Name="SyntaxColoring" CaseSensitive="True" Style="Root">
+			<Attributes Foreground="clBlack" Background="clWhite"/>
+			<Delimiters Value=""/>
+			<SubRules>
+				<Range Name="Remarks //" CaseSensitive="True" Style="Remarks //">
+					<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True" Style="I"/>
+					<Delimiters Value=""/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="// "/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="New" CaseSensitive="True" Style="">
+							<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True" Style="I"/>
+							<Delimiters Value=""/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="\ "/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Set Name="Russian symbols" Enabled="True" Style="" Symbols="АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя" Quantity="0">
+							<Attributes Foreground="clGreen" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+						</Set>
+					</SubRules>
+				</Range>
+				<Range Name="Strings" Style="Strings">
+					<Attributes Foreground="clFuchsia" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="&quot;"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="&quot; " Close="&quot;"/>
+					</MultiTokens>
+					<SubRules>
+						<KeyList Name="Symbols ''" Enabled="True" Style="" Words="''
+">
+							<Attributes Foreground="clFuchsia" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="Hex Numbers" Style="">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value=""/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="0x"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="Forth base voc" Enabled="True" Style="" Words="'
+-
+!
+&quot;
+*
+,
+.
+.F
+/
+//
+/MOD
+:
+;
+?.SPACE
+@
+[
+[']
+[C]!
+[C],
+[C]@
+[C]ALLOT
+[C]C!
+[C]C,
+[C]DP
+[C]HERE
+[C]LIMIT
+[COMPILE]
+\
+]
+{
+}
+}FRAME
++
++!
++LOOP
++TO
+&lt;
+&lt;DEBUG&gt;
+&lt;MOUSE_LEFT_UP&gt;
+&lt;MOUSE_LEFT&gt;
+&lt;MOUSE_MOVE&gt;
+&lt;MOUSE_RIGHT_UP&gt;
+&lt;MOUSE_RIGHT&gt;
+&lt;MOUSE_WHEEL&gt;
+&lt;OF&gt;
+&lt;TIMER&gt;
+&lt;WINDOW_RESIZE&gt;
+=
+&gt;
+&gt;FRAME
+&gt;L
+&gt;R
+1-
+1+
+2*
+2/
+2DROP
+2DUP
+3D
+3DROP
+3DUP
+4DROP
+4DUP
+5DROP
+ABORT
+ABS
+AGAIN
+ALLOT
+AND
+APPEND
+ARG0
+ARG1
+ARG2
+ARG3
+ARG4
+ARG5
+ARG6
+ARG7
+ARG8
+ARG9
+ARRAY
+AS
+BASE
+BEGIN
+BGCOLOR
+BIN
+BLACK
+BLUE
+BREAK
+BUILD-VERSION
+BYE
+BYTES
+C!
+C,
+C@
+CAN-DISPATCH
+CASE
+CELLS
+CFDEPTH
+CFILL
+CLEARSTACK
+CLOSE
+CLS
+CMOVE
+COLOR
+COMPONENTNAME
+CONSOLEL
+CONSOLETEXT
+CONSOLEX
+CONSOLEY
+CONSTANT
+CONTEXT
+COPYFILE
+COPYFILES
+COUNT
+CR
+CREATE
+CRF
+CURRENT
+D-
+D+
+DEBUG
+DECIMAL
+DEFINITIONS
+DEPTH
+DISPATCH-FNUMBER
+DISPATCH-NUMBER
+DO
+DOES&gt;
+DP
+DROP
+DUP
+ELSE
+EMIT
+EMIT1
+EMITF
+ENDCASE
+ENDOF
+ENDPROC
+EVALUATE
+EXECUTE
+F-
+F!
+F*
+F,
+F.
+F.F
+F/
+F@
+F+
+F+!
+F&lt;
+F=
+F&gt;
+F&gt;S
+F0&lt;
+F0=
+F0&gt;
+F2^X
+F2DUP
+FABS
+FATAN
+FCOS
+FDEPTH
+FDROP
+FDUP
+FEXP
+FGAUSS
+FILEEXIST
+FILL
+FLN
+FLOAT
+FLOATS
+FLOG2
+FMAX
+FMIN
+FNEGATE
+FOR
+FORTH
+FOVER
+FPATAN
+FPI
+FRAME{
+FRAME&gt;
+FRAMEDEPTH
+FROM
+FROT
+FSIN
+FSINCOS
+FSQRT
+FSWAP
+-FTH
+FX*X
+GET
+GETBGCOLOR
+GETCODE
+GETCOLOR
+GETDATA
+GETPIXEL
+GETSCREEN
+GETSTACK
+GOTOXY
+GREEN
+HASCONSOLETEXT
+HERE
+HEX
+HF-OUT
+HLINE
+I
+IADDR
+IF
+IJ
+IMAX
+IMMEDIATE
+INPORT
+INPORTD
+INPORTW
+J
+K
+L
+L@
+L&gt;
+L&gt;F
+L&gt;SF
+LASTKEY
+LATEST
+LDEPTH
+LDROP
+LIBCOMPONENTSNAME
+LIMIT
+LINE&quot;
+LINENUMBER
+LISTVOC
+LIT,
+LOCALDEPTH
+LOOP
+LSHIFT
+MAJOR-VERSION
+MAX
+MAXX
+MIN
+MINOR-VERSION
+MOD
+MOUSE-X
+MOUSE-Y
+MOUSE-Z
+MOVE
+NEGATE
+NEWFILE
+NEXT
+NIP
+NOP
+NOT
+NUMBER
+OBJECT-ID
+OBJECT-ID[]
+OBJECT-Z
+OBJECT-Z[]
+OF
+OFF
+OK
+ON
+OPAQUE
+OPEN
+OPENRW
+OR
+OUTPORT
+OUTPORTD
+OUTPORTW
+OVER
+PARSE
+PI
+PICK
+PIXEL
+PIXEL1
+PIXEL2
+PIXELZ
+PIXELZ0
+PRESET
+PRINT
+PRINTF
+PROC
+PROPERTYCOLOR
+PROPERTYNAME
+PROPERTYVALUE
+PSET
+QUAN
+QUANCOMPONENTS
+QUANLIBCOMPONENTS
+QUANPROPERTIES
+R@
+R&gt;
+RANGE
+RDROP
+READCHAR
+READFILE
+READLINE
+RED
+REPEAT
+RET@[]
+RETSTACK
+RGB
+ROT
+RSHIFT
+S=
+S&gt;F
+SCREEN.HEIGHT
+SCREEN.WIDTH
+SDEPTH
+SET
+SETBGCOLOR
+SETCOLOR
+SF!
+SF,
+SF@
+SF+!
+SF&gt;L
+SHL
+SHLA
+SHOWCODE
+SHOWSTACK
+SHOWSYMBOLS
+SHR
+SHRA
+SMOVE
+SSE!
+SSE:[X]+=[Y]
+'SSE:F(T)*G(T)DT
+STATE
+SUBVERSION
+SWAP
+SYMBOLS
+TEXTXY
+-TH
+THEN
+TIB
+TIMER_INTERVAL
+TO
+TOSTR
+TYPE
+U*
+U.
+U.F
+U/
+U&lt;
+U&gt;
+UMAX
+UMIN
+UNTIL
+URANGE
+USE
+VALUE
+VARIABLE
+VECT
+VLINE
+VOCABULARY
+W!
+W,
+W@
+W&gt;D
+WHERETEXTXY
+WHEREX
+WHEREXY
+WHEREY
+WHILE
+WHITE
+WINDOW.X
+WINDOW.Y
+WITHIN
+WORDS
+WRITECHAR
+WRITEFILE
+X0Y0
+XCHG
+XOR
+">
+					<Attributes Foreground="clNavy" Background="clWhite" Style="B"/>
+				</KeyList>
+				<KeyList Name="Forth Terms" Enabled="True" Style="" Words=":
+;
+ALLOT
+ARRAY
+BEGIN
+CONSTANT
+CREATE
+DO
+ELSE
+ENDPROC
+IF
+LOOP
+PROC
+QUAN
+THEN
+TO
+UNTIL
+VALUE
+VARIABLE
+VECT
+">
+					<Attributes Foreground="clMaroon" Background="clWhite" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+				</Set>
+				<Set Name="Float" Enabled="True" Style="" Symbols=".0123456789" Quantity="0">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+				</Set>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="proc1" Type="1">
+			<OpenToken Symbol=":"/>
+			<CloseToken Symbol=";"/>
+			<Properties AddEnding="True" WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="proc2" Type="1">
+			<OpenToken Symbol="PROC"/>
+			<CloseToken Symbol="ENDPROC"/>
+			<Properties AddEnding="True" WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="doloop" Type="1">
+			<OpenToken Symbol="DO"/>
+			<CloseToken Symbol="LOOP"/>
+			<Properties WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="beginuntil" Type="2">
+			<OpenToken Symbol="BEGIN"/>
+			<CloseToken Symbol="UNTIL"/>
+			<Properties WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="CommentLine" Value="//"/>
+		<Entry Name="FunctionDetect" Value="(PROC|:)\s+(.*?)\s"/>
+		<Entry Name="VariableDetect" Value="(VARIABLE|QUAN|VALUE|ARRAY|CREATE|CONSTANT|VECT)\s+(.*?)\s"/>
+	</CustomData>
+</SynUniHighlighter>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+  <SyntaxColoring>
+    <Info>
+      <General Name="SQL (Standard)" Extensions="SQL" Version="1" Revision="2" Sample="--&#xA;-- Basic Query 1&#xA;--&#xA;SELECT MAX(TIME)&#xA;  FROM test_table&#xA; WHERE id = 7&#xA;   AND user_text = 'Test Text'&#xA;   AND user_param = :bparam&#xA;&#xA; --Basic Query 2&#xA;  select * from tab where (a=&quot;abc&quot;) and (b= :bparam)" History=""/>
+      <Author Name="Karen Avanesov, Vitaly Nevzorov" Mail="" Web="" Copyright="(c) Karen Avanesov, Vitaly Nevzorov, 2004" Company="N/A" Remark="Some changes by Vitalik"/>
+    </Info>
+    <Schemes/>
+    <Editor/>
+    <MainRules Name="Root" Style="Root">
+      <Attributes Foreground="clBlack" Background="clWhite" ParentBackground="True"/>
+      <Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+      <SubRules>
+        <Range Name="Parameters" CaseSensitive="True" Style="">
+          <Attributes Foreground="$00FF0080" Background="clWhite" ParentBackground="True"/>
+          <Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+          <OpenToken StartLine="" PartOfTerm="Right"/>
+          <CloseToken StartLine="" PartOfTerm="False"/>
+          <Properties CloseOnTerm="True"/>
+          <MultiTokens>
+            <Tokens Open=":"/>
+          </MultiTokens>
+          <SubRules/>
+        </Range>
+        <Range Name="Strings '..'" Style="">
+          <Attributes Foreground="$006C6C6C" Background="clWhite" ParentBackground="True"/>
+          <Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+          <OpenToken StartLine="" PartOfTerm="Right"/>
+          <CloseToken StartLine="" PartOfTerm="Right"/>
+          <Properties/>
+          <MultiTokens>
+            <Tokens Open="'" Close="'"/>
+          </MultiTokens>
+          <SubRules/>
+        </Range>
+        <Range Name="Strings &quot;..&quot;" Style="">
+          <Attributes Foreground="clRed" Background="clWhite" ParentBackground="True"/>
+          <Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+          <OpenToken StartLine="" PartOfTerm="Right"/>
+          <CloseToken StartLine="" PartOfTerm="Right"/>
+          <Properties/>
+          <MultiTokens>
+            <Tokens Open="&quot;" Close="&quot;"/>
+          </MultiTokens>
+          <SubRules/>
+        </Range>
+        <Range Name="Remarks --" Style="">
+          <Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True" Style="B"/>
+          <Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+          <OpenToken StartLine="" PartOfTerm="Right"/>
+          <CloseToken StartLine="" PartOfTerm="False"/>
+          <Properties CloseOnEol="True"/>
+          <MultiTokens>
+            <Tokens Open="--"/>
+          </MultiTokens>
+          <SubRules/>
+        </Range>
+        <Range Name="Remarks /*..*/" Style="">
+          <Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True" Style="B"/>
+          <Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+          <OpenToken StartLine="" PartOfTerm="Right"/>
+          <CloseToken StartLine="" PartOfTerm="Right"/>
+          <Properties/>
+          <MultiTokens>
+            <Tokens Open="/*" Close="*/"/>
+          </MultiTokens>
+          <SubRules/>
+        </Range>
+        <KeyList Name="Standard" Enabled="True" Style="" Words="active&#xA;add&#xA;after&#xA;all&#xA;alter&#xA;and&#xA;any&#xA;as&#xA;asc&#xA;ascending&#xA;at&#xA;auto&#xA;base_name&#xA;before&#xA;begin&#xA;between&#xA;by&#xA;cache&#xA;cast&#xA;check&#xA;column&#xA;commit&#xA;committed&#xA;computed&#xA;conditional&#xA;constraint&#xA;containing&#xA;count&#xA;create&#xA;current&#xA;cursor&#xA;database&#xA;debug&#xA;declare&#xA;default&#xA;delete&#xA;desc&#xA;descending&#xA;distinct&#xA;do&#xA;domain&#xA;drop&#xA;else&#xA;end&#xA;entry_point&#xA;escape&#xA;exception&#xA;execute&#xA;exists&#xA;exit&#xA;external&#xA;extract&#xA;filter&#xA;for&#xA;foreign&#xA;from&#xA;full&#xA;function&#xA;generator&#xA;grant&#xA;group&#xA;having&#xA;if&#xA;in&#xA;inactive&#xA;index&#xA;inner&#xA;insert&#xA;into&#xA;is&#xA;isolation&#xA;join&#xA;key&#xA;left&#xA;level&#xA;like&#xA;merge&#xA;names&#xA;no&#xA;not&#xA;null&#xA;of&#xA;on&#xA;only&#xA;or&#xA;order&#xA;outer&#xA;parameter&#xA;password&#xA;plan&#xA;position&#xA;primary&#xA;privileges&#xA;procedure&#xA;protected&#xA;read&#xA;retain&#xA;returns&#xA;revoke&#xA;right&#xA;rollback&#xA;schema&#xA;select&#xA;set&#xA;shadow&#xA;shared&#xA;snapshot&#xA;some&#xA;suspend&#xA;table&#xA;then&#xA;to&#xA;transaction&#xA;trigger&#xA;uncommitted&#xA;union&#xA;unique&#xA;update&#xA;user&#xA;using&#xA;values&#xA;view&#xA;wait&#xA;when&#xA;where&#xA;while&#xA;with&#xA;work&#xA;">
+          <Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+        </KeyList>
+        <KeyList Name="Data Types" Enabled="True" Style="" Words="bigint&#xA;binary&#xA;bit&#xA;char&#xA;character&#xA;datetime&#xA;dec&#xA;decimal&#xA;float&#xA;image&#xA;int&#xA;integer&#xA;money&#xA;nchar&#xA;ntext&#xA;nvarchar&#xA;real&#xA;rowversion&#xA;smalldatetime&#xA;smallint&#xA;smallmoney&#xA;sql_variant&#xA;sysname&#xA;text&#xA;timestamp&#xA;tinyint&#xA;uniqueidentifier&#xA;varbinary&#xA;varchar&#xA;">
+          <Attributes Foreground="$000080FF" Background="clWhite" ParentBackground="True"/>
+        </KeyList>
+        <KeyList Name="Symbols" Enabled="True" Style="" Words="(&#xA;)&#xA;[&#xA;]&#xA;,&#xA;.&#xA;==&#xA;=&#xA;;&#xA;:&#xA;*&#xA;+&#xA;_&#xA;-&#xA;&amp;&#xA;%&#xA;$&#xA;#&#xA;!&#xA;?&#xA;/&#xA;\&#xA;|&#xA;">
+          <Attributes Foreground="clBlack" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+        </KeyList>
+        <Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789">
+          <Attributes Foreground="clRed" Background="clWhite" ParentBackground="True"/>
+        </Set>
+      </SubRules>
+    </MainRules>
+  </SyntaxColoring>
+  <CodeFolding/>
+</SynUniHighlighter>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="Delphi/CBuilder Form" Extensions="DFM" Version="1" Revision="2" Sample="object AFMain: TAFMain
+  HelpContext = 1
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Font.Name = 'System'
+  Font.Style = []
+  OldCreateOrder = True
+  Position = poScreenCenter
+  OnActivate = FormActivate
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  PixelsPerInch = 96
+  TextHeight = 16
+  object MainPanel: TPanel
+    Left = 0
+    Top = 0
+    Width = 333
+    Height = 45
+    Align = alTop
+    BevelOuter = bvLowered
+    TabOrder = 0
+    Glyph.Data = {
+        36060000424D3606000000000000360400002800000010000000200000000100
+        0800000000000002000000000000000000000001000000000000000000000000
+        BF0000BF000000BFBF00BF000000BF00BF00BFBF0000C0C0C000C0DCC000F0C8
+        0303030303030303030303030303030303030303030303030303}
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = AutoBtnClick
+  end
+  object Gauge: TStatusGauge
+    Left = 0
+    Top = 218
+    Width = 333
+    Height = 19
+    Panels = &lt;
+      item
+        Width = 0
+      end
+      item
+        Width = -2
+      end&gt;
+    SimplePanel = False
+    SizeGrip = False
+    separator = 150
+    gaugecolor = clNavy
+  end
+  object q: TADOQuery
+    CursorType = ctStatic
+    Parameters = &lt;&gt;
+    SQL.Strings = (
+      'Select * from mytable where work=''Mine''')
+    Left = 220
+    Top = 138
+  end" History=""/>
+			<Author Name="Vitalik, Vitaly Nevzorov" Mail="v-e-t-a-l@ukr.net" Web="" Copyright="(c) Vitaly Lyapota, Vitaly Nevzorov, 2004" Company="N/A" Remark=""/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="Root" Style="Root">
+			<Attributes Foreground="clBlack" Background="clWhite" ParentBackground="True"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="Enumerate" CaseSensitive="True" Style="">
+					<Attributes Foreground="$00800040" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="[" Close="]"/>
+					</MultiTokens>
+					<SubRules>
+						<KeyList Name="Symbols" Enabled="True" Style="" Words="[
+]
+">
+							<Attributes Foreground="$00800040" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="Strings" CaseSensitive="True" Style="">
+					<Attributes Foreground="$000065CA" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="'" Close="'"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Binary" CaseSensitive="True" Style="">
+					<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="{" Close="}"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="List" CaseSensitive="True" Style="">
+					<Attributes Foreground="$000080FF" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;" Close="&gt;"/>
+					</MultiTokens>
+					<SubRules>
+						<KeyList Name="Keywords" Enabled="True" Style="" Words="item
+end
+">
+							<Attributes Foreground="$000080FF" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Symbols" Enabled="True" Style="" Words="=
+-
+&lt;
+&gt;
+">
+							<Attributes Foreground="$000080FF" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+						<Set Name="New" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+							<Attributes Foreground="$000080FF" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+						</Set>
+					</SubRules>
+				</Range>
+				<Range Name="Symbol" Style="">
+					<Attributes Foreground="clBlack" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="#"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="Statements" Enabled="True" Style="" Words="object
+end
+">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Logical" Enabled="True" Style="" Words="True
+False
+">
+					<Attributes Foreground="clNavy" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Symbols" Enabled="True" Style="" Words="=
+:
+[
+]
+-
+&lt;
+&gt;
+">
+					<Attributes Foreground="clBlack" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
+				</KeyList>
+				<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+					<Attributes Foreground="clMaroon" Background="clWhite" ParentBackground="True"/>
+				</Set>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="object" Type="1">
+			<OpenToken Symbol="OBJECT"/>
+			<CloseToken Symbol="END"/>
+			<Properties AddEnding="True"/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="FunctionDetect" Value="(object)\s+([\w\d]+)"/>
+	</CustomData>
+</SynUniHighlighter>

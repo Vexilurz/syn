@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="Windows Registry Files" Extensions="REG" Version="1" Revision="2" Sample="REGEDIT4
+
+[HKEY_CLASSES_ROOT]
+
+[HKEY_CLASSES_ROOT\CLSID]
+@=&quot;&quot;
+
+[HKEY_CLASSES_ROOT\CLSID\{B323F8E0-2E68-11D0-90EA-00AA0060F86C}]
+@=&quot;StillImage&quot;
+
+[HKEY_CLASSES_ROOT\CLSID\{B323F8E0-2E68-11D0-90EA-00AA0060F86C}\InProcServer32]
+@=&quot;C:\\WINDOWS\\SYSTEM\\sti.dll&quot;
+&quot;ThreadingModel&quot;=&quot;Both&quot;" History=""/>
+			<Author Name="Dmitry Utolin" Mail="dutolin@yandex.ru" Web="" Copyright="© Dmitry Utolin, 2006" Company="N/A" Remark="Based on Vitaly Lyapota and Vitaly Nevzorov highlighter"/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="Root" Style="Root">
+			<Attributes Foreground="clBlack" Background="$80000005"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="Key path" CaseSensitive="True" Style="">
+					<Attributes Foreground="clBlue" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="[" Close="]"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="CLSID" CaseSensitive="True" Style="">
+							<Attributes Foreground="$00A00000" Background="$80000005" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine="" PartOfTerm="Right"/>
+							<CloseToken StartLine="" PartOfTerm="Right"/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="{" Close="}"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="Roots" Enabled="True" Style="" Words="HKEY_CLASSES_ROOT
+HKEY_USERS
+HKEY_CURRENT_CONFIG
+HKEY_CURRENT_USER
+HKEY_LOCAL_MACHINE
+HKEY_DYN_DATA
+">
+							<Attributes Foreground="clPurple" Background="$80000005" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="Hex" CaseSensitive="True" Style="">
+					<Attributes Foreground="clBlue" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="=hex"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="dword" CaseSensitive="True" Style="">
+					<Attributes Foreground="clMaroon" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="dword:"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Strings &quot;..&quot;" Style="">
+					<Attributes Foreground="clGreen" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="&quot;" Close="&quot;"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="Header" Enabled="True" Style="" Words="REGEDIT4
+Windows Registry Editor Version 5.00
+">
+					<Attributes Foreground="clBlack" Background="clWhite" Style="BU"/>
+				</KeyList>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="[]" Type="0">
+			<OpenToken Symbol="]"/>
+			<CloseToken Symbol="["/>
+			<Properties AllowNoSubs="True"/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="FunctionDetect" Value="(^)(\[[^\[\]]+\])\s"/>
+		<Entry Name="VariableDetect" Value="(\s*)\&quot;([^\&quot;]+)\&quot;"/>
+	</CustomData>
+</SynUniHighlighter>

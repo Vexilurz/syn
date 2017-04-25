@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="MS DOS Batch" Extensions="BAT CMD" Version="1" Revision="2" Sample="rem MS-DOS batch file
+;remark!
+@echo off
+cls
+echo The command line is: %1 %2 %3 %4 %5
+copy %1 %2
+rem
+rem now wait for the user ...
+pause
+copy c:\*.pas d:\
+if errorlevel 1 echo Error in copy action!" History=""/>
+			<Author Name="Vitalik, Vitaly Nevzorov" Mail="v-e-t-a-l@ukr.net" Web="" Copyright="(c) Vitaly Lyapota, Vitaly Nevzorov, 2004" Company="N/A" Remark=""/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="Root" Style="Root">
+			<Attributes Foreground="clBlack" Background="$80000005" ParentBackground="True"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="Output" Style="">
+					<Attributes Foreground="$000070DF" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="echo"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="Variables" Style="">
+							<Attributes Foreground="$00FF0080" Background="$80000005" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine="" PartOfTerm="Right"/>
+							<CloseToken StartLine="" PartOfTerm="False"/>
+							<Properties CloseOnTerm="True" AllowPredClose="True"/>
+							<MultiTokens>
+								<Tokens Open="%"/>
+							</MultiTokens>
+							<SubRules>
+								<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+									<Attributes Foreground="$00FF0080" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+								</Set>
+							</SubRules>
+						</Range>
+						<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+							<Attributes Foreground="$000070DF" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+						</Set>
+					</SubRules>
+				</Range>
+				<Range Name="Invisible" Style="">
+					<Attributes Foreground="clBlue" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="@"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Remark Rem" Style="">
+					<Attributes Foreground="clGray" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="False"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="rem"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Remark ;" Style="">
+					<Attributes Foreground="clGray" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open=";"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Variables" Style="">
+					<Attributes Foreground="$00FF0080" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="%"/>
+					</MultiTokens>
+					<SubRules>
+						<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+							<Attributes Foreground="$00FF0080" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+						</Set>
+					</SubRules>
+				</Range>
+				<KeyList Name="DOS Commands" Enabled="True" Style="" Words="ansi
+append
+assign
+attrib
+autofail
+backup
+basedev
+Beep
+boot
+break
+buffers
+cache
+cd
+chcp
+chdir
+chkdsk
+choice
+cmd
+codepage
+command
+comp
+compact
+convert
+copy
+country
+date
+ddinstal
+debug
+del
+Delete
+deltree
+detach
+device
+devicehigh
+devinfo
+dir
+diskcoache
+diskcomp
+diskcopy
+doskey
+dpath
+dumpprocess
+eautil
+edit
+edlin
+endlocal
+Erase
+Error
+exit_vdm
+expand
+extproc
+fc
+fcbs
+fdisk
+fdiskpm
+FileAttr
+FileDateTime
+files
+find
+format
+fsaccess
+fsfilter
+ftp
+graftabl
+graphics
+help
+IIf
+interlnk
+intersvr
+iopl
+join
+keyb
+keys
+label
+lastdrive
+lh
+libpath
+loadfix
+loadhigh
+makeini
+maxwait
+md
+mem
+memman
+mkdir
+mode
+more
+move
+msav
+msbackup
+msd
+net
+nslfunc
+patch
+path
+pauseonerror
+picview
+pmrexx
+print
+printmonbufsize
+priority
+priority_disk_io
+prompt
+protectonly
+protshell
+pstat
+qbasic
+rd
+recover
+reipl
+Ren
+Rename
+replace
+restore
+rmdir
+rmsize
+run
+scandisk
+setboot
+setlocal
+setver
+share
+shell
+smartdrv
+sort
+spool
+subst
+suppresspopups
+swappath
+sys
+syslevel
+syslog
+threads
+time
+timeslice
+trace
+tracebuf
+tracefmt
+trapdump
+tree
+type
+undelete
+unformat
+unpack
+use
+ver
+verify
+view
+vmdisk
+vol
+vsafe
+xcopy
+xcopy32
+xdfcopy
+">
+					<Attributes Foreground="clBlack" Background="$80000005" ParentForeground="True" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<KeyList Name="Batch Statements" Enabled="True" Style="" Words="if
+do
+in
+off
+call
+on
+cls
+for
+set
+not
+goto
+shift
+pause
+title
+exist
+start
+errorlevel
+else
+end
+exit
+return
+say select
+then
+when
+">
+					<Attributes Foreground="clBlue" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Word 'echo'" Enabled="True" Style="" Words="echo
+">
+					<Attributes Foreground="clBlack" Background="$80000005" ParentForeground="True" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<KeyList Name="Word 'rem'" Enabled="True" Style="" Words="rem
+">
+					<Attributes Foreground="clGray" Background="$80000005" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<KeyList Name="Symbols" Enabled="True" Style="" Words="*
+,
+.
+/
+:
+\
+">
+					<Attributes Foreground="clBlack" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+				</KeyList>
+				<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+					<Attributes Foreground="clBlack" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+				</Set>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding/>
+	<CustomData/>
+</SynUniHighlighter>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+  <SyntaxColoring>
+    <Info>
+      <General Name="VRML97" Extensions="wrl" Version="1" Revision="0" Sample="#VRML V2.0 utf8&#xA;Transform {&#xA;  children [&#xA;    NavigationInfo { headlight FALSE } # We'll add our own light&#xA;    DirectionalLight {        # First child&#xA;        direction 0 0 -1      # Light illuminating the scene&#xA;    }&#xA;  ] # end of children for world&#xA;}&#xA;DEF Example_2 Script {&#xA;    field   SFNode myself USE Example_2&#xA;    field   SFNode root USE ROOT_TRANSFORM&#xA;    field   MFString url &quot;foo.wrl&quot;&#xA;    eventIn MFNode   nodesLoaded&#xA;    eventIn SFBool   trigger_event&#xA;&#xA;    url &quot;javascript:&#xA;        function trigger_event(value, ts){&#xA;            // do something and then fetch values&#xA;            Browser.createVRMLFromURL(url, myself, 'nodesLoaded');&#xA;        }&#xA;&#xA;        function nodesLoaded(value, timestamp){&#xA;            if (value.length &gt; 5) {&#xA;                 // do something more than 5 nodes in this MFNode...&#xA;            }&#xA;            root.addChildren = value;&#xA;        }&quot;&#xA;}" History=""/>
+      <Author Name="Akulov Nikolay" Mail="delphiworld@mail.ru" Web="www.delphiworld.narod.ru" Copyright="Copyright (c) Akulov Nikolay, 2005" Company="" Remark=""/>
+    </Info>
+    <Schemes/>
+    <Editor/>
+    <MainRules Name="Root" CaseSensitive="True" Style="Root">
+      <Attributes Foreground="clBlack" Background="clWhite"/>
+      <Delimiters Value="!&quot;%&amp;'()*+,-./:;&lt;=&gt;?@[\]^{|}~"/>
+      <SubRules>
+        <Range Name="Remarks #" Style="Remarks #">
+          <Attributes Foreground="clRed" Background="clWhite" ParentBackground="True" Style="I"/>
+          <Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+          <OpenToken StartLine=""/>
+          <CloseToken StartLine=""/>
+          <Properties CloseOnEol="True"/>
+          <MultiTokens>
+            <Tokens Open="#"/>
+          </MultiTokens>
+          <SubRules/>
+        </Range>
+        <Range Name="Remarks //" Style="Remarks //">
+          <Attributes Foreground="clRed" Background="clWhite" ParentBackground="True" Style="I"/>
+          <Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+          <OpenToken StartLine=""/>
+          <CloseToken StartLine=""/>
+          <Properties CloseOnEol="True"/>
+          <MultiTokens>
+            <Tokens Open="//"/>
+          </MultiTokens>
+          <SubRules/>
+        </Range>
+        <KeyList Name="Nodes" Enabled="True" Style="" Words="Anchor&#xA;Appearance&#xA;AudioClip&#xA;Background&#xA;Billboard&#xA;Box&#xA;Browser&#xA;Collision&#xA;Color&#xA;ColorInterpolator&#xA;Cone&#xA;Contour2D&#xA;Coordinate&#xA;CoordinateDeformer&#xA;CoordinateInterpolator&#xA;Cylinder&#xA;CylinderSensor&#xA;DirectionalLight&#xA;DropSensor&#xA;ElevationGrid&#xA;Extrusion&#xA;Fog&#xA;GeoCoordinate&#xA;GeoElevationGrid&#xA;GeoLocation&#xA;GeoLOD&#xA;GeoMetadata&#xA;GeoOrigin&#xA;GeoPositionInterpolator&#xA;GeoTouchSensor&#xA;Group&#xA;ImageTexture&#xA;IndexedFaceSet&#xA;IndexedLineSet&#xA;Inline&#xA;KbdSensor&#xA;length()&#xA;LOD&#xA;Material&#xA;MFColor&#xA;MFFloat&#xA;MFInt32&#xA;MFNode&#xA;MFRotation&#xA;MFString&#xA;MFTime&#xA;MFVec2f&#xA;MFVec3f&#xA;MovieTexture&#xA;myself&#xA;NavigationInfo&#xA;Normal&#xA;NormalInterpolator&#xA;NurbsCurve&#xA;NurbsCurve2D&#xA;NurbsGroup&#xA;NurbsPositionInterpolator&#xA;NurbsSurface&#xA;NurbsTextureSurface&#xA;OrientationInterpolator&#xA;PixelTexture&#xA;PlaneSensor&#xA;PointLight&#xA;PointSet&#xA;Polyline2D&#xA;PositionInterpolator&#xA;ProximitySensor&#xA;root&#xA;ScalarInterpolator&#xA;Script&#xA;SFBool&#xA;SFColor&#xA;SFFloat&#xA;SFImage&#xA;SFInt32&#xA;SFNode&#xA;SFRotation&#xA;SFString&#xA;SFTime&#xA;SFVec2f&#xA;SFVec3f&#xA;Shape&#xA;Sound&#xA;Sphere&#xA;SphereSensor&#xA;SpotLight&#xA;Switch&#xA;Text&#xA;Text3D&#xA;textureCoordinate&#xA;TimeSensor&#xA;TouchSensor&#xA;Transform&#xA;TrimmedSurface&#xA;Viewpoint&#xA;VisibilitySensor&#xA;VrmlMatrix&#xA;WorldInfo&#xA;">
+          <Attributes Foreground="$005C00B9" Background="clWhite" ParentBackground="True"/>
+        </KeyList>
+        <KeyList Name="Fields" Enabled="True" Style="" Words="add&#xA;addChildren&#xA;addRoute&#xA;addTrimmingContour&#xA;ambientColor&#xA;ambientIntensity&#xA;angle&#xA;appearance&#xA;array&#xA;attenuation&#xA;autoOffset&#xA;avatarSize&#xA;axisOfRotation&#xA;b&#xA;backUrl&#xA;bboxCenter&#xA;bboxSize&#xA;beamWidth&#xA;beginCap&#xA;bindTime&#xA;bottom&#xA;bottomRadius&#xA;bottomUrl&#xA;ccw&#xA;center&#xA;child1Url&#xA;child2Url&#xA;child3Url&#xA;child4Url&#xA;children&#xA;choice&#xA;collide&#xA;collideTime&#xA;color&#xA;colorIndex&#xA;colorPerVertex&#xA;comp&#xA;controlPoint&#xA;convex&#xA;coord&#xA;coordIndex&#xA;creaseAngle&#xA;createVRMLFromString&#xA;createVRMLFromURL&#xA;cross&#xA;crossSection&#xA;cutOffAngle&#xA;cycleInterval&#xA;cycleTime&#xA;data&#xA;deleteRoute&#xA;depth&#xA;description&#xA;diffuseColor&#xA;dimension&#xA;direction&#xA;directOutput&#xA;diskAngle&#xA;divide&#xA;dot&#xA;dropOffRate&#xA;dropTime&#xA;duration_changed&#xA;emissiveColor&#xA;enabled&#xA;endCap&#xA;enterTime&#xA;exitTime&#xA;faceType&#xA;family&#xA;fieldOfView&#xA;fieldOfViewfields&#xA;filename&#xA;focalDistance&#xA;fogType&#xA;FontStyle&#xA;fraction_changed&#xA;frontUrl&#xA;g&#xA;geoCoords&#xA;geoGridOrigin&#xA;geometry&#xA;geoSystem&#xA;geovalue_changed&#xA;getAxis&#xA;getCurrentFrameRate&#xA;getCurrentSpeed&#xA;getHSV&#xA;getName&#xA;getTransform&#xA;getVersion&#xA;getWorldURL&#xA;groundAngle&#xA;groundColor&#xA;headlight&#xA;height&#xA;heightAngle&#xA;hitGeoCoord_changed&#xA;hitNormal&#xA;hitNormal_changed&#xA;hitPoint&#xA;hitPoint_changed&#xA;hitTexCoord&#xA;hitTexCoord_changed&#xA;hitTextCoord_changed&#xA;horizontal&#xA;image&#xA;indexOfRefraction&#xA;info&#xA;inputCoord&#xA;inputTransform&#xA;intensity&#xA;inverse&#xA;isA&#xA;isactive&#xA;isBound&#xA;isOver&#xA;jump&#xA;justification&#xA;justify&#xA;key&#xA;keyDown&#xA;keyUp&#xA;keyValue&#xA;keyWeight&#xA;knot&#xA;language&#xA;leftToRight&#xA;leftUrl&#xA;length&#xA;level&#xA;loadURL&#xA;location&#xA;loop&#xA;map&#xA;material&#xA;materialIndex&#xA;matrix&#xA;maxAngle&#xA;maxBack&#xA;maxExtent&#xA;maxFront&#xA;maxPosition&#xA;minAngle&#xA;minBack&#xA;minFront&#xA;minPosition&#xA;multiply&#xA;multLeft&#xA;multMatrixVec&#xA;multRight&#xA;multvec&#xA;multVecMatrix&#xA;mustEvaluate&#xA;name&#xA;negate&#xA;nodeChain&#xA;normalIndex&#xA;normalize&#xA;normalPerVertex&#xA;numPoints&#xA;offset&#xA;on&#xA;order&#xA;orientation&#xA;orientation_changed&#xA;outputCoord&#xA;parameter&#xA;parts&#xA;pitch&#xA;point&#xA;position&#xA;position_changed&#xA;priority&#xA;proxy&#xA;r&#xA;radius&#xA;range&#xA;removeChildren&#xA;removeTrimmingContour&#xA;renderCulling&#xA;repeatS&#xA;repeatT&#xA;replaceWorld&#xA;rightUrl&#xA;rootNode&#xA;rootUrl&#xA;rotateYUp&#xA;rotation&#xA;rotation_changed&#xA;scale&#xA;scaleFactor&#xA;scaleOrientation&#xA;set_bind&#xA;set_colorIndex&#xA;set_coordIndex&#xA;set_crossSection&#xA;set_fraction&#xA;set_height&#xA;set_normalIndex&#xA;set_orientation&#xA;set_scale&#xA;set_spine&#xA;set_texCoordIndex&#xA;set_yScale&#xA;setAxis&#xA;setDescription&#xA;setHSV&#xA;setTransform&#xA;shapeType&#xA;shininess&#xA;side&#xA;size&#xA;skyAngle&#xA;skyColor&#xA;slerp&#xA;solid&#xA;source&#xA;spacing&#xA;spatialize&#xA;specularColor&#xA;speed&#xA;spine&#xA;startIndex&#xA;startTime&#xA;stopTime&#xA;string&#xA;style&#xA;subtract&#xA;summary&#xA;surface&#xA;tessellation&#xA;tessellationScale&#xA;texCoord&#xA;texCoordIndex&#xA;texture&#xA;textureCoordIndex&#xA;textureTransform&#xA;time&#xA;title&#xA;top&#xA;topToBottom&#xA;topUrl&#xA;toString&#xA;touchTime&#xA;trackPoint_changed&#xA;translation&#xA;translation_changed&#xA;transparency&#xA;transpose&#xA;trimmingContour&#xA;type&#xA;uDimension&#xA;uKnot&#xA;uOrder&#xA;url&#xA;uTessellation&#xA;value&#xA;value_changed&#xA;vDimension&#xA;vector&#xA;vertexOrdering&#xA;visibilityLimit&#xA;visibilityRange&#xA;vKnot&#xA;vOrder&#xA;vTessellation&#xA;wDimension&#xA;weight&#xA;whichChild&#xA;whichChoice&#xA;whichChoise&#xA;width&#xA;wKnot&#xA;wOrder&#xA;wrapS&#xA;wrapT&#xA;x&#xA;xDimension&#xA;xSpacing&#xA;y&#xA;yScale&#xA;z&#xA;zDimension&#xA;zSpacing&#xA;">
+          <Attributes Foreground="$00C08080" Background="clWhite" ParentBackground="True"/>
+        </KeyList>
+        <KeyList Name="Events" Enabled="True" Style="" Words="MFColor&#xA;MFFloat&#xA;MFInt32&#xA;MFNode&#xA;MFRotation&#xA;MFString&#xA;MFTime&#xA;MFVec2f&#xA;MFVec3f&#xA;SFBool&#xA;SFColor&#xA;SFFloat&#xA;SFImage&#xA;SFInt32&#xA;SFNode&#xA;SFRotation&#xA;SFString&#xA;SFTime&#xA;SFVec2f&#xA;SFVec3f&#xA;">
+          <Attributes Foreground="$0000A800" Background="clWhite" ParentBackground="True"/>
+        </KeyList>
+        <KeyList Name="Params" Enabled="True" Style="" Words="ALL&#xA;AUTO&#xA;BINDINGS&#xA;BOLD&#xA;BOTTOM&#xA;CENTER&#xA;CLAMP&#xA;CLOCKWISE&#xA;CONVEX&#xA;COUNTERCLOCKWISE&#xA;CULLING&#xA;DEFAULT&#xA;DEFAULTS&#xA;ENUMS&#xA;FACE&#xA;FALSE&#xA;FAMILY&#xA;FILE&#xA;FORMAT&#xA;ITALIC&#xA;JUSTIFICATION&#xA;LEFT&#xA;NONE&#xA;NULL&#xA;OFF&#xA;ON&#xA;OVERALL&#xA;PARTS&#xA;PER_FACE&#xA;PER_FACE_INDEXED&#xA;PER_PART&#xA;PER_PART_INDEXED&#xA;PER_VERTEX&#xA;PER_VERTEX_INDEXED&#xA;REPEAT&#xA;RIGHT&#xA;SHAPE&#xA;SIDES&#xA;SOLID&#xA;STYLE&#xA;TRUE&#xA;TYPE&#xA;UNKNOWN_FACE_TYPE&#xA;UNKNOWN_ORDERING&#xA;UNKNOWN_SHAPE_TYPE&#xA;WRAP&#xA;">
+          <Attributes Foreground="$00009393" Background="clWhite" ParentBackground="True"/>
+        </KeyList>
+        <KeyList Name="Keywords" Enabled="True" Style="" Words="DEF&#xA;eventIn&#xA;eventOut&#xA;exposedField&#xA;EXTERNPROTO&#xA;field&#xA;IS&#xA;new&#xA;PROTO&#xA;ROUTE&#xA;TO&#xA;USE&#xA;function&#xA;javascript&#xA;">
+          <Attributes Foreground="clBlack" Background="clWhite" ParentForeground="True" ParentBackground="True" Style="B"/>
+        </KeyList>
+      </SubRules>
+    </MainRules>
+  </SyntaxColoring>
+  <CodeFolding>
+    <FoldRegion Name="{}" Type="0">
+      <OpenToken Symbol="{"/>
+      <CloseToken Symbol="}"/>
+      <Properties AddEnding="True"/>
+      <SubRegions/>
+    </FoldRegion>
+  </CodeFolding>
+</SynUniHighlighter>

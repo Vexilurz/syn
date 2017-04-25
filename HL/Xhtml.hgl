@@ -1,0 +1,5261 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="XHTML" Extensions="xml xhtml htm html asp shtml shtm inc php phtml phtm php2 php3 php4 php5 js hgl css" Version="1" Revision="0" Sample="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;&gt;
+&lt;head&gt;
+&lt;!-- TemplateBeginEditable name=&quot;doctitle&quot; --&gt;
+&lt;title&gt;SEPA.SPB.RU // ИНТРА&lt;/title&gt;
+&lt;META http-equiv=&quot;imagetoolbar&quot; CONTENT='no'&gt;
+&lt;script language=&quot;JavaScript&quot; src=&quot;../lib.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;html&gt;
+  &lt;body bgcolor=&quot;aquamarine&quot; alink=&quot;#FF00A2&quot; onload=&quot;&quot;&gt;
+    &lt;invalid&gt;Sample HTML code copy 2001&lt;/invalid&gt;
+    &lt;img src=&quot;../images/temp.jpg&quot;&gt; &lt;anchor&gt; &lt;!-- WML Tag --&gt;
+    &lt;?
+      function printNumber() // New function
+      {
+        $number = 1234;
+        $sql_query = &quot;select * from my_table where id &gt; 0 order by 1&quot;;
+        print &quot;The number is $number&quot;.&quot; and \n\t&quot;;
+        for ($i = 0; $i &lt;= $number; $i++)
+        {
+         /* $var['file'] = __file__;
+          $x += bcmath.scale + 1;
+          break;  */
+        }
+      }
+    ?&gt;
+  &lt;/body&gt;
+&lt;/html&gt;" History=""/>
+			<Author Name="Sepa" Mail="sepich@rambler.ru" Web="sepa.spb.ru" Copyright="" Company="" Remark=""/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="SyntaxColoring" Style="Root">
+			<Attributes Foreground="clBlack" Background="$00E5E5E5"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="HTMLLang" Style="HTMLLang">
+					<Attributes Foreground="clBlack" Background="$00E5E5E5" ParentForeground="True" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;" Close="&gt;"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="BracketsTwo" Style="">
+							<Attributes Foreground="clBlue" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="&quot;" Close="&quot;"/>
+							</MultiTokens>
+							<SubRules>
+								<Range Name="Colors" Style="Colors">
+									<Attributes Foreground="$0000B0B0" Background="$00E5E5E5" ParentBackground="True"/>
+									<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+									<OpenToken StartLine=""/>
+									<CloseToken StartLine=""/>
+									<Properties CloseOnTerm="True"/>
+									<MultiTokens>
+										<Tokens Open="#"/>
+									</MultiTokens>
+									<SubRules/>
+								</Range>
+								<Range Name="SpecSymbols" Style="SpecSymbols">
+									<Attributes Foreground="$005F86E0" Background="$00E5E5E5" ParentBackground="True"/>
+									<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+									<OpenToken StartLine=""/>
+									<CloseToken StartLine=""/>
+									<Properties CloseOnTerm="True"/>
+									<MultiTokens>
+										<Tokens Open="&amp;" Close=";"/>
+									</MultiTokens>
+									<SubRules/>
+								</Range>
+								<KeyList Name="NamedColors" Enabled="True" Style="" Words="aliceblue
+antuquewhite
+aqua
+aquamarine
+azure
+beige
+bisque
+black
+blanchedalmond
+blue
+blueviolet
+brown
+burlywood
+cadetblue
+chartreuse
+chocolate
+coral
+cornflowerblue
+cornsilk
+cyan
+darkblue
+darkcyan
+darkgoldenrod
+darkgray
+darkgreen
+darkkhaki
+darkmagenta
+darkolivegreen
+darkorange
+darkorchid
+darkred
+darksalmon
+darkseagreen
+darkslateblue
+darkslategray
+darkturquoise
+darkviolet
+deeppink
+deepskyblue
+dimgray
+dodgerblue
+fainsboro
+firebrick
+floralwhite
+forestgreen
+fuchsia
+ghostwhite
+gold
+goldenrod
+gray
+green
+greenyellow
+honeydew
+hotpink
+indianred
+indigo
+ivory
+khaki
+lavender
+lavenderblush
+lawngreen
+lemonchiffon
+lightblue
+lightcoral
+lightcyan
+lightgray
+lightgreen
+lightpink
+lightsalmon
+lightseagreen
+lightskyblue
+lightslategray
+lightsteelblue
+lightyellow
+lime
+limegreen
+linen
+magenta
+maroon
+mediumaaquamarine
+mediumblue
+mediumorchid
+mediumpurple
+mediumseagreen
+mediumslateblue
+mediumspringgreen
+mediumturquoise
+mediumvioletred
+midnightblue
+mintcream
+mistyrose
+moccasin
+navajowhite
+navy
+oldlace
+olive
+olivedrab
+orange
+orangered
+orchid
+palegoldenrod
+palegreen
+paleturquise
+papayaawhip
+peachpuff
+peru
+pink
+plaevioletred
+plum
+powderblue
+purple
+red
+rosybrown
+royalblue
+saddlebrown
+salmon
+sandybrown
+seagreen
+seashell
+sienna
+silver
+skyblue
+slateblue
+slategray
+snow
+springgreen
+steelblue
+tan
+teal
+thistle
+tomato
+turquoise
+violet
+wheat
+white
+whitesmoke
+yellow
+yellowgreen
+">
+									<Attributes Foreground="$0000B0B0" Background="$00E5E5E5" ParentBackground="True"/>
+								</KeyList>
+							</SubRules>
+						</Range>
+						<Range Name="BracketsOne" Style="">
+							<Attributes Foreground="clBlue" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="'" Close="'"/>
+							</MultiTokens>
+							<SubRules>
+								<Range Name="Colors" Style="Colors">
+									<Attributes Foreground="$0000B0B0" Background="$00E5E5E5" ParentBackground="True"/>
+									<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+									<OpenToken StartLine=""/>
+									<CloseToken StartLine=""/>
+									<Properties CloseOnTerm="True"/>
+									<MultiTokens>
+										<Tokens Open="#"/>
+									</MultiTokens>
+									<SubRules/>
+								</Range>
+								<Range Name="SpecSymbols" Style="SpecSymbols">
+									<Attributes Foreground="$005F86E0" Background="$00E5E5E5" ParentBackground="True"/>
+									<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+									<OpenToken StartLine=""/>
+									<CloseToken StartLine=""/>
+									<Properties CloseOnTerm="True"/>
+									<MultiTokens>
+										<Tokens Open="&amp;" Close=";"/>
+									</MultiTokens>
+									<SubRules/>
+								</Range>
+								<KeyList Name="NamedColors" Enabled="True" Style="" Words="aliceblue
+antuquewhite
+aqua
+aquamarine
+azure
+beige
+bisque
+black
+blanchedalmond
+blue
+blueviolet
+brown
+burlywood
+cadetblue
+chartreuse
+chocolate
+coral
+cornflowerblue
+cornsilk
+cyan
+darkblue
+darkcyan
+darkgoldenrod
+darkgray
+darkgreen
+darkkhaki
+darkmagenta
+darkolivegreen
+darkorange
+darkorchid
+darkred
+darksalmon
+darkseagreen
+darkslateblue
+darkslategray
+darkturquoise
+darkviolet
+deeppink
+deepskyblue
+dimgray
+dodgerblue
+fainsboro
+firebrick
+floralwhite
+forestgreen
+fuchsia
+ghostwhite
+gold
+goldenrod
+gray
+green
+greenyellow
+honeydew
+hotpink
+indianred
+indigo
+ivory
+khaki
+lavender
+lavenderblush
+lawngreen
+lemonchiffon
+lightblue
+lightcoral
+lightcyan
+lightgray
+lightgreen
+lightpink
+lightsalmon
+lightseagreen
+lightskyblue
+lightslategray
+lightsteelblue
+lightyellow
+lime
+limegreen
+linen
+magenta
+maroon
+mediumaaquamarine
+mediumblue
+mediumorchid
+mediumpurple
+mediumseagreen
+mediumslateblue
+mediumspringgreen
+mediumturquoise
+mediumvioletred
+midnightblue
+mintcream
+mistyrose
+moccasin
+navajowhite
+navy
+oldlace
+olive
+olivedrab
+orange
+orangered
+orchid
+palegoldenrod
+palegreen
+paleturquise
+papayaawhip
+peachpuff
+peru
+pink
+plaevioletred
+plum
+powderblue
+purple
+red
+rosybrown
+royalblue
+saddlebrown
+salmon
+sandybrown
+seagreen
+seashell
+sienna
+silver
+skyblue
+slateblue
+slategray
+snow
+springgreen
+steelblue
+tan
+teal
+thistle
+tomato
+turquoise
+violet
+wheat
+white
+whitesmoke
+yellow
+yellowgreen
+">
+									<Attributes Foreground="$0000B0B0" Background="$00E5E5E5" ParentBackground="True"/>
+								</KeyList>
+							</SubRules>
+						</Range>
+						<Range Name="Colors" Style="">
+							<Attributes Foreground="clBlack" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnTerm="True"/>
+							<MultiTokens>
+								<Tokens Open="#"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="SpecSymbols" Style="">
+							<Attributes Foreground="clBlue" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnTerm="True"/>
+							<MultiTokens>
+								<Tokens Open="&amp;" Close=";"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="Attributes" Enabled="True" Style="" Words="abbr
+above
+accept
+accept-charset
+accesskey
+action
+align
+alink
+alt
+archive
+axis
+background
+balance
+behavior
+below
+bgcolor
+bgproperties
+border
+bordercolor
+bordercolordark
+bordercolorlight
+bottommargin
+cellpadding
+cellspacing
+challenge
+char
+charoff
+charset
+checked
+cite
+class
+classid
+clear
+clip
+code
+codebase
+codetype
+color
+cols
+colspan
+columns
+compact
+content
+controls
+coords
+data
+datafld
+dataformatas
+datapagesize
+datasrc
+datetime
+declare
+defer
+dir
+direction
+disabled
+domain
+dynsrc
+emptyok
+enctype
+event
+face
+for
+format
+forua
+frame
+frameborder
+framespacing
+gutter
+headers
+height
+hidden
+href
+hreflang
+hspace
+http-equiv
+id
+iname
+ismap
+ivalue
+label
+lang
+language
+left
+leftmargin
+link
+localsrc
+longdesc
+loop
+loopdelay
+lowsrc
+marginheight
+marginwidth
+maxlenght
+mayscript
+media
+method
+methods
+mode
+multiple
+name
+newcontext
+nohref
+noresize
+noshade
+nowrap
+object
+onenterbackward
+onenterforward
+onpick
+ontimer
+optional
+ordered
+pagex
+pagey
+palette
+path
+pluginspage
+pluginurl
+point-size
+profile
+prompt
+property
+readonly
+rel
+rev
+rightmargin
+rows
+rowspan
+rules
+scheme
+scope
+scroll
+scrollamount
+scrolldelay
+scrolling
+selected
+sendreferer
+shape
+size
+span
+src
+stanby
+start
+style
+summary
+suppress
+tabindex
+target
+text
+title
+top
+topmargin
+truespeed
+type
+units
+url
+urn
+usemap
+valign
+value
+valuetype
+version
+visibility
+vlink
+volume
+vspace
+weight
+width
+wrap
+z-index
+">
+							<Attributes Foreground="$00804000" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Events" Enabled="True" Style="" Words="onabort
+onafterprint
+onafterupdate
+onbeforecopy
+onbeforecut
+onbeforeeditfocus
+onbeforepaste
+onbeforeprint
+onbeforeunload
+onbeforeupdate
+onblur
+onbounce
+oncellchange
+onchange
+onclick
+oncontextmenu
+oncopy
+oncut
+ondataavailable
+ondatasetchanged
+ondatasetcomplete
+ondblclick
+ondrag
+ondragdrop
+ondragend
+ondragenter
+ondragleave
+ondragover
+ondragstart
+ondrop
+onerror
+onerrorupdate
+onfilterchange
+onfinish
+onfocus
+onhelp
+onkeydown
+onkeypress
+onkeyup
+onload
+onlosecapture
+onmousedown
+onmousemove
+onmouseout
+onmouseover
+onmouseup
+onmove
+onpaste
+onpropertychange
+onreadystatechange
+onreset
+onresize
+onrowenter
+onrowexit
+onrowsdelete
+onrowsinserted
+onscroll
+onselect
+onselectstart
+onstart
+onstop
+onsubmit
+onunload
+">
+							<Attributes Foreground="$00804000" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="WMLTags" Enabled="True" Style="" Words="access
+anchor
+card
+do
+go
+noop
+onevent
+postfield
+prev
+refresh
+setvar
+template
+timer
+wml
+">
+							<Attributes Foreground="$00616161" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="NamedColors" Enabled="True" Style="" Words="aliceblue
+antuquewhite
+aqua
+aquamarine
+azure
+beige
+bisque
+black
+blanchedalmond
+blue
+blueviolet
+brown
+burlywood
+cadetblue
+chartreuse
+chocolate
+coral
+cornflowerblue
+cornsilk
+cyan
+darkblue
+darkcyan
+darkgoldenrod
+darkgray
+darkgreen
+darkkhaki
+darkmagenta
+darkolivegreen
+darkorange
+darkorchid
+darkred
+darksalmon
+darkseagreen
+darkslateblue
+darkslategray
+darkturquoise
+darkviolet
+deeppink
+deepskyblue
+dimgray
+dodgerblue
+fainsboro
+firebrick
+floralwhite
+forestgreen
+fuchsia
+ghostwhite
+gold
+goldenrod
+gray
+green
+greenyellow
+honeydew
+hotpink
+indianred
+indigo
+ivory
+khaki
+lavender
+lavenderblush
+lawngreen
+lemonchiffon
+lightblue
+lightcoral
+lightcyan
+lightgray
+lightgreen
+lightpink
+lightsalmon
+lightseagreen
+lightskyblue
+lightslategray
+lightsteelblue
+lightyellow
+lime
+limegreen
+linen
+magenta
+maroon
+mediumaaquamarine
+mediumblue
+mediumorchid
+mediumpurple
+mediumseagreen
+mediumslateblue
+mediumspringgreen
+mediumturquoise
+mediumvioletred
+midnightblue
+mintcream
+mistyrose
+moccasin
+navajowhite
+navy
+oldlace
+olive
+olivedrab
+orange
+orangered
+orchid
+palegoldenrod
+palegreen
+paleturquise
+papayaawhip
+peachpuff
+peru
+pink
+plaevioletred
+plum
+powderblue
+purple
+red
+rosybrown
+royalblue
+saddlebrown
+salmon
+sandybrown
+seagreen
+seashell
+sienna
+silver
+skyblue
+slateblue
+slategray
+snow
+springgreen
+steelblue
+tan
+teal
+thistle
+tomato
+turquoise
+violet
+wheat
+white
+whitesmoke
+yellow
+yellowgreen
+">
+							<Attributes Foreground="clBlack" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="HTMLTags" Enabled="True" Style="" Words="a
+abbr
+acronym
+address
+applet
+area
+b
+base
+basefont
+bdo
+bgsound
+big
+blink
+blockquote
+body
+br
+button
+caption
+center
+cite
+code
+col
+colgroup
+comment
+dd
+del
+dfn
+dir
+div
+dl
+dt
+em
+embed
+fieldset
+font
+form
+frame
+frameset
+h1
+h2
+h3
+h4
+h5
+h6
+head
+hr
+html
+htmlarea
+i
+iframe
+ilayer
+img
+input
+ins
+isindex
+kbd
+keygen
+label
+layer
+legend
+li
+link
+listing
+map
+marquee
+menu
+meta
+multicol
+nobr
+noembed
+noframes
+nolayer
+noscript
+object
+ol
+optgroup
+option
+p
+param
+plaintext
+pre
+q
+s
+samp
+script
+select
+server
+small
+spacer
+span
+strike
+strong
+style
+sub
+sup
+table
+tbody
+&lt;td
+&lt;/td
+textarea
+tfoot
+th
+thead
+title
+tr
+tt
+u
+ul
+var
+wbr
+xmp
+">
+							<Attributes Foreground="clNavy" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="AttributesSrc" Enabled="True" Style="" Words="href
+src
+action
+background
+">
+							<Attributes Foreground="$00C08000" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="VBScript" Style="VBScript">
+					<Attributes Foreground="clBlack" Background="$00E5E5E5" ParentForeground="True" ParentBackground="True"/>
+					<Delimiters Value="!$%&amp;'()*+,./;&lt;=&gt;?@[\]^{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;SCRIPT LANGUAGE=&quot;V" Close="&lt;/script&gt;"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="Strings &amp;qt;..&amp;qt;" Style="Strings &amp;qt;..&amp;qt;">
+							<Attributes Foreground="clGray" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="&quot;" Close="&quot;"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Remarks '" Style="Remarks '">
+							<Attributes Foreground="clRed" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="'"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Remarks //" Style="Remarks //">
+							<Attributes Foreground="clRed" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="//" Close="--&gt;"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="Key words" Enabled="True" Style="" Words="and
+as
+boolean
+byte
+call
+case
+char
+class
+const
+date
+decimal
+dim
+do
+double
+each
+else
+elseif
+empty
+end
+eqv
+erase
+error
+execute
+exit
+explicit
+for
+function
+get
+goto
+if
+imp
+integer
+is
+let
+long
+loop
+mod
+new
+next
+not
+nothing
+null
+object
+on
+option
+or
+private
+property
+public
+randomize
+redim
+rem
+resume
+return
+select
+set
+short
+single
+stop
+string
+sub
+then
+to
+until
+var
+wend
+while
+with
+">
+							<Attributes Foreground="clBlack" Background="$00E5E5E5" ParentForeground="True" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Objects" Enabled="True" Style="" Words="dictionary
+document
+err
+file
+filesystemobject
+folder
+match
+navigator
+regexp
+textstream
+wscript
+wshnetwork
+wshshell
+">
+							<Attributes Foreground="$00BB7E00" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Methods" Enabled="True" Style="" Words="add
+addprinterconnection
+addwindowsprinterconnection
+appactivate
+buildpath
+clear
+close
+connectobject
+copy
+copyfile
+copyfolder
+createfolder
+createobject
+createshortcut
+createtextfile
+delete
+deletefile
+deletefolder
+disconnectobject
+driveexists
+echo
+enumnetworkdrives
+enumprinterconnections
+exists
+expandenvironmentstrings
+fileexists
+folderexists
+getabsolutepathname
+getbasename
+getdrive
+getdrivename
+getextensionname
+getfile
+getfilename
+getfolder
+getparentfoldername
+getresource
+getspecialfolder
+gettempname
+indexof
+items
+keys
+logevent
+mapnetworkdrive
+move
+movefile
+movefolder
+openastextstream
+opentextfile
+popup
+put
+quit
+raise
+read
+readall
+readline
+regdelete
+regread
+regwrite
+removeall
+removenetworkdrive
+removeprinterconnection
+replace
+run
+save
+sendkeys
+setdefaultprinter
+setinfo
+skip
+skipline
+sleep
+test
+write
+writeblanklines
+writeline
+">
+							<Attributes Foreground="$00FF0080" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Properties" Enabled="True" Style="" Words="accountdisabled
+accountexpirationdate
+application
+appname
+appversion
+arguments
+atendofline
+atendofstream
+attributes
+autounlockinterval
+availablespace
+badpasswordattempts
+column
+comparemode
+computername
+count
+datecreated
+datelastaccessed
+datelastmodified
+description
+drive
+driveletter
+drives
+drivetype
+environment
+files
+filesystem
+firstindex
+freespace
+fullname
+global
+helpcontext
+helpfile
+homedirdrive
+homedirectory
+hotkey
+iconlocation
+ignorecase
+interactive
+isaccountlocked
+isready
+isrootfolder
+item
+key
+lastlogin
+lastlogoff
+length
+line
+lockoutobservationinterval
+loginhours
+loginscript
+loginworkstations
+maxbadpasswordsallowed
+maxlogins
+maxpasswordage
+maxstorage
+minpasswordage
+minpasswordlength
+name
+number
+objectsid
+parameters
+parentfolder
+passwordage
+passwordexpirationdate
+passwordexpired
+passwordhistorylength
+path
+pattern
+primarygroupid
+profile
+remove
+rootfolder
+scriptfullname
+scriptname
+serialnumber
+sharename
+shortname
+shortpath
+size
+source
+specialfolders
+subfolders
+targetpath
+totalsize
+type
+userdomain
+userflags
+username
+value
+version
+volumename
+windowstyle
+workingdirectory
+">
+							<Attributes Foreground="$00A85353" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Constants" Enabled="True" Style="" Words="false
+true
+vbabort
+vbabortretryignore
+vbapplicationmodal
+vbarray
+vbbinarycompare
+vbblack
+vbblue
+vbboolean
+vbbyte
+vbcancel
+vbcr
+vbcritical
+vbcrlf
+vbcurrency
+vbcyan
+vbdataobject
+vbdate
+vbdecimal
+vbdefaultbutton1
+vbdefaultbutton2
+vbdefaultbutton3
+vbdefaultbutton4
+vbdouble
+vbempty
+vberror
+vbexclamation
+vbfirstfourdays
+vbfirstfullweek
+vbfirstjan1
+vbformfeed
+vbfriday
+vbgeneraldate
+vbgreen
+vbignore
+vbinformation
+vbinteger
+vblf
+vblong
+vblongdate
+vblongtime
+vbmagenta
+vbmonday
+vbnewline
+vbno
+vbnull
+vbnullchar
+vbnullstring
+vbobject
+vbobjecterror
+vbok
+vbokcancel
+vbokonly
+vbquestion
+vbred
+vbretry
+vbretrycancel
+vbsaturday
+vbshortdate
+vbshorttime
+vbsingle
+vbstring
+vbsunday
+vbsystemmodal
+vbtab
+vbtextcompare
+vbthursday
+vbtuesday
+vbusesystem
+vbusesystemdayofweek
+vbvariant
+vbverticaltab
+vbwednesday
+vbwhite
+vbyellow
+vbyes
+vbyesno
+vbyesnocancel
+">
+							<Attributes Foreground="clOlive" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Functions" Enabled="True" Style="" Words="abs
+array
+asc
+atn
+cbool
+cbyte
+ccur
+cdate
+cdbl
+chr
+cint
+clng
+cos
+csng
+cstr
+date
+dateaddfunction
+datediff
+datepart
+dateserial
+datevalue
+day
+eval
+exp
+filter
+fix
+formatcurrency
+formatdatetime
+formatnumber
+formatpercent
+getobject
+getref
+hex
+hour
+inputbox
+instr
+instrrev
+int
+isarray
+isdate
+isempty
+isnull
+isnumeric
+isobject
+join
+lbound
+lcase
+left
+len
+loadpicture
+log
+ltrim
+mid
+minute
+month
+monthname
+msgbox
+now
+oct
+replace
+rgb
+right
+rnd
+round
+rtrim
+scriptengine
+scriptenginebuildversion
+scriptenginemajorversion
+scriptengineminorversion
+second
+sgn
+sin
+space
+split
+sqr
+strcomp
+string
+strreverse
+tan
+time
+timer
+timeserial
+timevalue
+trim
+typename
+ubound
+ucase
+vartype
+weekday
+weekdayname
+year
+">
+							<Attributes Foreground="$00FF51A8" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Fake" Enabled="True" Style="" Words="t&quot;&gt;
+">
+							<Attributes Foreground="clBlack" Background="$00E5E5E5" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Operators" Enabled="True" Style="" Words="[
+]
+">
+							<Attributes Foreground="$000000C6" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Comment1" Enabled="True" Style="" Words="&lt;!--
+--&gt;
+">
+							<Attributes Foreground="clRed" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="HTMLRemarks" Style="">
+					<Attributes Foreground="$00006600" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;!--" Close="--&gt;"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="DocType" Style="">
+					<Attributes Foreground="$00004080" Background="$00E5E5E5" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;!" Close="&gt;"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="CSS" Style="Styles">
+					<Attributes Foreground="clBlack" Background="$00E5E5E5" ParentForeground="True" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;style" Close="&lt;/style&gt;"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="css {..}" Style="">
+							<Attributes Foreground="$008000FF" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="{" Close="}"/>
+							</MultiTokens>
+							<SubRules>
+								<KeyList Name="css props" Enabled="True" Style="" Words="azimuth
+background
+background-attachment
+background-color
+background-image
+background-position
+background-repeat
+behavior
+border
+border-bottom
+border-bottom-color
+border-bottom-style
+border-bottom-width
+border-collapse
+border-color
+border-left
+border-left-color
+border-left-style
+border-left-width
+border-right
+border-right-color
+border-right-style
+border-right-width
+border-spacing
+border-style
+border-top
+border-top-color
+border-top-style
+border-top-width
+border-width
+bottom
+caption-side
+clear
+clip
+color
+content
+counter-increments
+counter-reset
+cue
+cue-after
+cue-before
+cursor
+direction
+display
+elevation
+empty-cells
+filter
+float
+font
+font-family
+font-size
+font-size-adjust
+font-stretch
+font-style
+font-variant
+font-weight
+height
+layout-grid
+layout-grid-char
+layout-grid-char-spacing
+layout-grid-line
+layout-grid-mode
+layout-grid-type
+left
+letter-spacing
+line-height
+list-style
+list-style-image
+list-style-position
+list-style-type
+margin
+margin-bottom
+margin-left
+margin-right
+margin-top
+marker-offset
+marks
+max-height
+max-width
+min-height
+min-width
+orphans
+outline
+outline-color
+outline-style
+outline-width
+overflow
+padding
+padding-bottom
+padding-left
+padding-right
+padding-top
+page
+page-break-after
+page-break-before
+page-break-inside
+pause
+pause-after
+pause-before
+pitch
+pitch-during
+pitch-range
+position
+quotes
+richness
+right
+ruby-align
+ruby-overhang
+ruby-position
+scrollbar-3dlight-color
+scrollbar-arrow-color
+scrollbar-darkshadow-color
+scrollbar-face-color
+scrollbar-shadow-color
+size
+speak
+speak-header
+speak-numeral
+speak-punctuation
+speech-rate
+stress
+table-layout
+text-align
+text-decoration
+text-indent
+text-justify
+text-shadow
+text-transform
+top
+unicode-bidi
+vertical-align
+visibility
+voice-family
+volume
+widows
+width
+word-spacing
+z-index
+">
+									<Attributes Foreground="$00A85353" Background="$00E5E5E5" ParentBackground="True"/>
+								</KeyList>
+							</SubRules>
+						</Range>
+						<Range Name="css Remarks /*..*/" Style="Remarks /*..*/">
+							<Attributes Foreground="clRed" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="/*" Close="*/"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="css Remarks //" Style="Remarks //">
+							<Attributes Foreground="clRed" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="//" Close="--&gt;"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="css ClassDef" Style="ClassDef">
+							<Attributes Foreground="clGray" Background="clNone"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnTerm="True"/>
+							<MultiTokens>
+								<Tokens Open="."/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="css LinkDef" Style="LinkDef">
+							<Attributes Foreground="clGray" Background="clNone"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnTerm="True"/>
+							<MultiTokens>
+								<Tokens Open="#"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="css Comment1" Enabled="True" Style="" Words="&lt;!--
+--&gt;
+">
+							<Attributes Foreground="clRed" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="ASP (VBScript)" Style="ASP (VBScript)">
+					<Attributes Foreground="$00004080" Background="$00E5E5E5" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;%" Close="%&gt;"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="Remarks '" Style="Remarks '">
+							<Attributes Foreground="clRed" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="'"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Strings" Style="Strings">
+							<Attributes Foreground="clGray" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="&quot;" Close="&quot;"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Remarks REM" Style="Remarks REM">
+							<Attributes Foreground="clRed" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="REM"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Comments" Style="Comments">
+							<Attributes Foreground="clRed" Background="clNone" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="//"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Comments2" Style="Comments2">
+							<Attributes Foreground="clRed" Background="clNone" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="#"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="Functions" Enabled="True" Style="" Words="abs
+array
+asc
+ascb
+ascw
+atn
+avg
+cbool
+cbyte
+ccur
+cdate
+cdbl
+cdec
+choose
+chr
+chrb
+chrw
+cint
+clng
+command
+cos
+count
+createobject
+csng
+cstr
+curdir
+cvar
+cvdate
+cverr
+date
+dateadd
+datediff
+datepart
+dateserial
+datevalue
+day
+ddb
+dir
+doevents
+environ
+eof
+error
+exp
+fileattr
+filedatetime
+filelen
+fix
+format
+freefile
+fv
+getallstrings
+getattr
+getautoserversettings
+getobject
+getsetting
+hex
+hour
+iif
+imestatus
+input
+inputb
+inputbox
+instb
+instr
+int
+ipmt
+isarray
+isdate
+isempty
+iserror
+ismissing
+isnull
+isnumeric
+isobject
+lbound
+lcase
+left
+leftb
+len
+lenb
+loadpicture
+loc
+lof
+log
+ltrim
+max
+mid
+midb
+min
+minute
+mirr
+month
+msgbox
+now
+nper
+npv
+oct
+partition
+pmt
+ppmt
+pv
+qbcolor
+rate
+rgb
+right
+rightb
+rnd
+rtrim
+second
+seek
+sgn
+shell
+sin
+sln
+space
+spc
+sqr
+stdev
+stdevp
+str
+strcomp
+strconv
+string
+sum
+switch
+syd
+tab
+tan
+time
+timer
+timeserial
+timevalue
+trim
+typename
+ubound
+ucase
+val
+var
+varp
+vartype
+weekday
+year
+">
+							<Attributes Foreground="$00FF51A8" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Methods" Enabled="True" Style="" Words="accept
+activate
+add
+addcustom
+addfile
+addfromfile
+addfromtemplate
+additem
+addnew
+addtoaddintoolbar
+addtoolboxprogid
+append
+appendchunk
+arrange
+assert
+asyncread
+batchupdate
+begintrans
+bind
+cancel
+cancelasyncread
+cancelbatch
+cancelupdate
+canpropertychange
+captureimage
+celltext
+cellvalue
+circle
+clear
+clearfields
+clearsel
+clearselcols
+clone
+close
+cls
+colcontaining
+columnsize
+committrans
+compactdatabase
+compose
+connect
+cookies
+copy
+copyquerydef
+createdatabase
+createdragimage
+createembed
+createfield
+creategroup
+createindex
+createlink
+createpreparedstatement
+createpropery
+createquery
+createquerydef
+createrelation
+createtabledef
+createuser
+createworkspace
+customize
+delete
+deletecolumnlabels
+deletecolumns
+deleterowlabels
+deleterows
+doverb
+drag
+draw
+edit
+editcopy
+editpaste
+enddoc
+ensurevisible
+establishconnection
+execute
+extracticon
+fetch
+fetchverbs
+files
+fillcache
+find
+findfirst
+finditem
+findlast
+findnext
+findprevious
+forward
+getbookmark
+getchunk
+getclipstring
+getdata
+getfirstvisible
+getformat
+getheader
+getlinefromchar
+getnumticks
+getrows
+getselectedpart
+gettext
+getvisiblecount
+goback
+goforward
+hide
+hittest
+holdfields
+idle
+initializelabels
+insertcolumnlabels
+insertcolumns
+insertobjdlg
+insertrowlabels
+insertrows
+item
+killdoc
+layout
+line
+linkexecute
+linkpoke
+linkrequest
+linksend
+listen
+loadfile
+loadresdata
+loadrespicture
+loadresstring
+logevent
+makecompilefile
+makereplica
+moreresults
+move
+movedata
+movefirst
+movelast
+movenext
+moveprevious
+navigateto
+newpage
+newpassword
+nextrecordset
+oledrag
+onaddinsupdate
+onconnection
+ondisconnection
+onstartupcomplete
+open
+openconnection
+opendatabase
+openquerydef
+openrecordset
+openresultset
+openurl
+overlay
+paintpicture
+paste
+pastspecialdlg
+peekdata
+play
+point
+populatepartial
+popupmenu
+print
+printform
+propertychanged
+pset
+querystring
+quit
+raise
+randomdatafill
+randomfillcolumns
+randomfillrows
+rdocreateenvironment
+rdoregisterdatasource
+readfromfile
+readproperty
+rebind
+refill
+refresh
+refreshlink
+registerdatabase
+reload
+remove
+removeaddinfromtoolbar
+removeitem
+render
+repairdatabase
+reply
+replyall
+requery
+resetcustom
+resetcustomlabel
+resolvename
+restoretoolbar
+resync
+rollback
+rollbacktrans
+rowbookmark
+rowcontaining
+rowtop
+save
+saveas
+savefile
+savetofile
+savetoolbar
+savetoole1file
+scale
+scalex
+scaley
+scroll
+select
+selectall
+selectpart
+selprint
+send
+senddata
+set
+setautoserversettings
+setdata
+setfocus
+setoption
+setsize
+settext
+setviewport
+show
+showcolor
+showfont
+showhelp
+showopen
+showprinter
+showsave
+showwhatsthis
+signoff
+signon
+size
+span
+splitcontaining
+startlabeledit
+startlogging
+stop
+synchronize
+textheight
+textwidth
+todefaults
+twipstochartpart
+typebycharttype
+update
+updatecontrols
+updaterecord
+updaterow
+upto
+whatsthismode
+writeproperty
+zorder
+">
+							<Attributes Foreground="$00FF0080" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Events" Enabled="True" Style="" Words="accesskeypress
+afteraddfile
+afterchangefilename
+afterclosefile
+aftercoledit
+aftercolupdate
+afterdelete
+afterinsert
+afterlabeledit
+afterremovefile
+afterupdate
+afterwritefile
+ambienchanged
+applychanges
+associate
+asyncreadcomplete
+axisactivated
+axislabelactivated
+axislabelselected
+axislabelupdated
+axisselected
+axistitleactivated
+axistitleselected
+axistitleupdated
+axisupdated
+beforeclick
+beforecoledit
+beforecolupdate
+beforeconnect
+beforedelete
+beforeinsert
+beforelabeledit
+beforeloadfile
+beforeupdate
+buttonclick
+buttoncompleted
+buttongotfocus
+buttonlostfocus
+change
+chartactivated
+chartselected
+chartupdated
+click
+coledit
+collapse
+colresize
+columnclick
+compare
+configchagecancelled
+configchanged
+connectionrequest
+dataarrival
+datachanged
+dataupdated
+dblclick
+deactivate
+devicearrival
+deviceotherevent
+devicequeryremove
+devicequeryremovefailed
+deviceremovecomplete
+deviceremovepending
+devmodechange
+disconnect
+displaychanged
+dissociate
+dogetnewfilename
+done
+donepainting
+downclick
+dragdrop
+dragover
+dropdown
+editproperty
+entercell
+enterfocus
+exitfocus
+expand
+footnoteactivated
+footnoteselected
+footnoteupdated
+gotfocus
+headclick
+infomessage
+iniproperties
+initialize
+itemactivated
+itemadded
+itemcheck
+itemclick
+itemreloaded
+itemremoved
+itemrenamed
+itemseletected
+keydown
+keypress
+keyup
+leavecell
+legendactivated
+legendselected
+legendupdated
+linkclose
+linkerror
+linknotify
+linkopen
+load
+lostfocus
+mousedown
+mousemove
+mouseup
+nodeclick
+objectmove
+olecompletedrag
+oledragdrop
+oledragover
+olegivefeedback
+olesetdata
+olestartdrag
+onaddnew
+oncomm
+paint
+panelclick
+paneldblclick
+pathchange
+patternchange
+plotactivated
+plotselected
+plotupdated
+pointactivated
+pointlabelactivated
+pointlabelselected
+pointlabelupdated
+pointselected
+pointupdated
+powerquerysuspend
+powerresume
+powerstatuschanged
+powersuspend
+querychangeconfig
+querycomplete
+querycompleted
+querytimeout
+queryunload
+readproperties
+reposition
+requestchangefilename
+requestwritefile
+resize
+resultschanged
+rowcolchange
+rowcurrencychange
+rowresize
+rowstatuschanged
+selchange
+selectionchanged
+sendcomplete
+sendprogress
+seriesactivated
+seriesselected
+seriesupdated
+settingchanged
+splitchange
+statechanged
+statusupdate
+syscolorschanged
+terminate
+timechanged
+titleactivated
+titleselected
+unboundadddata
+unbounddeleterow
+unboundgetrelativebookmark
+unboundreaddata
+unboundwritedata
+unload
+upclick
+updated
+validate
+validationerror
+willassociate
+willchangedata
+willdissociate
+willexecute
+willupdaterows
+writeproperties
+">
+							<Attributes Foreground="$0000C600" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Statements" Enabled="True" Style="" Words="appactivate
+base
+beep
+call
+case
+char
+chdir
+chdrive
+class
+const
+defbool
+defbyte
+defcur
+defdate
+defdbl
+defdec
+defint
+deflng
+defobj
+defsng
+defstr
+deftype
+defvar
+deletesetting
+dim
+do
+else
+elseif
+end
+enum
+erase
+event
+exit
+explicit
+filecopy
+for
+foreach
+function
+get
+gosub
+goto
+if
+implements
+in
+kill
+let
+lineinput
+lock
+lset
+mkdir
+name
+namespace
+next
+new
+on
+onerror
+option
+override
+private
+property
+protected
+public
+put
+raiseevent
+randomize
+redim
+reset
+resume
+return
+rmdir
+rset
+savepicture
+savesetting
+sendkeys
+setattr
+static
+sub
+then
+this
+type
+unlock
+using
+void
+wend
+while
+width
+with
+write
+">
+							<Attributes Foreground="clBlack" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Request&amp;amp;Responce" Enabled="True" Style="" Words="application
+objectcontent
+request
+response
+server
+session
+">
+							<Attributes Foreground="$00BB7E00" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Brackets" Enabled="True" Style="" Words="[
+]
+">
+							<Attributes Foreground="$000000C1" Background="clNone"/>
+						</KeyList>
+						<KeyList Name="Operators" Enabled="True" Style="" Words="-
+--
+!
+!=
+%
+&amp;
+&amp;&amp;
+*
+*=
+.
+.=
+/=
+:
+?
+@
+^
+|
+||
+~
++
+++
++=
+&lt;
+&lt;&lt;
+&lt;=
+=
+-=
+==
+=&gt;
+&gt;
+-&gt;
+&gt;&gt;
+and
+or
+xor
+{
+}
+">
+							<Attributes Foreground="clBlack" Background="clNone"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="Include" Style="Include">
+					<Attributes Foreground="clFuchsia" Background="$00E5E5E5" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;!--#include" Close="--&gt;"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="SpecSymbols" Style="SpecSymbols">
+					<Attributes Foreground="$005F86E0" Background="$00E5E5E5" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&amp;" Close=";"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="PHP" Style="PHP">
+					<Attributes Foreground="clBlack" Background="$00DADADA"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;?" Close="?&gt;"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="Strings '..'" Style="Strings '..'">
+							<Attributes Foreground="$000069D2" Background="$00DADADA" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="'" Close="'"/>
+							</MultiTokens>
+							<SubRules>
+								<KeyList Name="Slash" Enabled="True" Style="" Words="?&gt;
+\'
+\&quot;
+\$
+\\
+\n
+\r
+\t
+&lt;?
+">
+									<Attributes Foreground="$000080FF" Background="$00DADADA" ParentBackground="True"/>
+								</KeyList>
+							</SubRules>
+						</Range>
+						<Range Name="Strings &quot;..&quot;" Style="Strings &quot;..&quot;">
+							<Attributes Foreground="$00006FDD" Background="$00DADADA" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="&quot;" Close="&quot;"/>
+							</MultiTokens>
+							<SubRules>
+								<Range Name="Vars" Style="Vars">
+									<Attributes Foreground="clGreen" Background="$00DADADA" ParentBackground="True" Style="B"/>
+									<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+									<OpenToken StartLine=""/>
+									<CloseToken StartLine=""/>
+									<Properties CloseOnTerm="True"/>
+									<MultiTokens>
+										<Tokens Open="$"/>
+									</MultiTokens>
+									<SubRules/>
+								</Range>
+								<KeyList Name="Slash" Enabled="True" Style="" Words="?&gt;
+\'
+\&quot;
+\$
+\\
+\n
+\r
+\t
+&lt;?
+">
+									<Attributes Foreground="$000080FF" Background="$00DADADA" ParentBackground="True"/>
+								</KeyList>
+								<KeyList Name="SQL" Enabled="True" Style="" Words="alter
+ascending
+avg
+between
+cast
+commit
+committed
+computed
+constraint
+count
+create
+declare
+delete
+desc
+descending
+distinct
+domain
+drop
+exception
+execute
+extract
+foreign
+from
+full
+generator
+grant
+group
+having
+inner
+insert
+into
+join
+key
+like
+lower
+max
+min
+null
+order
+outer,
+primary
+revoke
+right
+rollback
+select
+set
+starting
+sum
+suspend
+transaction
+trigger
+uncommitted
+union
+unique
+update
+upper
+value
+values
+variable
+view
+where
+">
+									<Attributes Foreground="clBlack" Background="$00DADADA" ParentBackground="True"/>
+								</KeyList>
+							</SubRules>
+						</Range>
+						<Range Name="Remarks //" Style="Remarks //">
+							<Attributes Foreground="clGray" Background="$00DADADA" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="//"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="&lt;&lt;&lt;txt" Style="&lt;&lt;&lt;txt">
+							<Attributes Foreground="$00006BD7" Background="$00DADADA" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="&lt;&lt;&lt;txt" Close="txt;"/>
+							</MultiTokens>
+							<SubRules>
+								<Range Name="Vars" Style="Vars">
+									<Attributes Foreground="clGreen" Background="$00DADADA" ParentBackground="True" Style="B"/>
+									<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+									<OpenToken StartLine=""/>
+									<CloseToken StartLine=""/>
+									<Properties CloseOnTerm="True"/>
+									<MultiTokens>
+										<Tokens Open="$"/>
+									</MultiTokens>
+									<SubRules/>
+								</Range>
+							</SubRules>
+						</Range>
+						<Range Name="Vars" Style="Vars">
+							<Attributes Foreground="clGreen" Background="$00DADADA" ParentBackground="True" Style="B"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnTerm="True"/>
+							<MultiTokens>
+								<Tokens Open="$"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="RemarkDiez" Style="RemarkDiez">
+							<Attributes Foreground="clGray" Background="$00DADADA" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="#"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Remarks /*..*/" Style="Remarks /*..*/">
+							<Attributes Foreground="clGray" Background="$00DADADA" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="/*" Close="*/"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="&lt;&lt;&lt;htm" Style="&lt;&lt;&lt;htm">
+							<Attributes Foreground="$00005BB7" Background="$00DADADA" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="&lt;&lt;&lt;htm" Close="htm;"/>
+							</MultiTokens>
+							<SubRules>
+								<Range Name="Vars" Style="Vars">
+									<Attributes Foreground="clGreen" Background="$00DADADA" ParentBackground="True" Style="B"/>
+									<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+									<OpenToken StartLine=""/>
+									<CloseToken StartLine=""/>
+									<Properties CloseOnTerm="True"/>
+									<MultiTokens>
+										<Tokens Open="$"/>
+									</MultiTokens>
+									<SubRules/>
+								</Range>
+							</SubRules>
+						</Range>
+						<KeyList Name="Operators" Enabled="True" Style="" Words="-
+--
+!
+!=
+%
+&amp;
+&amp;&amp;
+*
+*=
+.
+.=
+/=
+:
+?
+@
+[
+]
+^
+|
+||
+~
++
+++
++=
+&lt;
+&lt;&lt;
+&lt;=
+=
+-=
+==
+=&gt;
+&gt;
+-&gt;
+&gt;&gt;
+and
+or
+xor
+">
+							<Attributes Foreground="clBlack" Background="$00DADADA" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Functions" Enabled="True" Style="" Words="__call
+__clone
+__get
+__set
+abs
+acos
+addcslashes
+addslashes
+apache_lookup_uri
+apache_note
+array
+array_combine
+array_count_values
+array_diff
+array_diff_uassoc
+array_flip
+array_intersect
+array_keys
+array_merge
+array_merge_recursive
+array_multisort
+array_pad
+array_pop
+array_push
+array_rand
+array_reverse
+array_shift
+array_slice
+array_splice
+array_udiff
+array_udiff_assoc
+array_uintersect
+array_uintersect_assoc
+array_uintersect_uassoc
+array_unique
+array_unshift
+array_values
+array_walk
+array_walk_recursive
+arsort
+asin
+asort
+aspell_check
+aspell_check_row
+aspell_new
+aspell_suggest
+assert
+assert_options
+atan
+atan2
+base_convert
+base64_decode
+base64_encode
+basename
+bcadd
+bccomp
+bcdiv
+bcmod
+bcmul
+bcpow
+bcscale
+bcsqrt
+bcsub
+bin2hex
+bindec
+ceil
+chdir
+checkdate
+checkdnsrr
+chgrp
+chmod
+chop
+chown
+chr
+chunk_split
+clearstatcache
+closedir
+closelog
+compact
+connection_aborted
+connection_status
+connection_timeout
+convert_cyr_string
+convert_uudecode
+convert_uuencode
+copy
+cos
+count
+count_chars
+cpdf_add_annotation
+cpdf_add_outline
+cpdf_arc
+cpdf_begin_text
+cpdf_circle
+cpdf_clip
+cpdf_close
+cpdf_closepath
+cpdf_closepath_fill_stroke
+cpdf_closepath_stroke
+cpdf_continue_text
+cpdf_curveto
+cpdf_end_text
+cpdf_fill
+cpdf_fill_stroke
+cpdf_finalize
+cpdf_finalize_page
+cpdf_global_set_document_limits
+cpdf_lineto
+cpdf_moveto
+cpdf_open
+cpdf_open_jpeg
+cpdf_output_buffer
+cpdf_page_init
+cpdf_place_inline_image
+cpdf_rect
+cpdf_restore
+cpdf_rlineto
+cpdf_rmoveto
+cpdf_rotate
+cpdf_save
+cpdf_save_to_file
+cpdf_scale
+cpdf_set_char_spacing
+cpdf_set_creator
+cpdf_set_current_page
+cpdf_set_font
+cpdf_set_horiz_scaling
+cpdf_set_keywords
+cpdf_set_leading
+cpdf_set_page_animation
+cpdf_set_subject
+cpdf_set_text_matrix
+cpdf_set_text_pos
+cpdf_set_text_rendering
+cpdf_set_text_rise
+cpdf_set_title
+cpdf_set_word_spacing
+cpdf_setdash
+cpdf_setflat
+cpdf_setgray
+cpdf_setgray_fill
+cpdf_setgray_stroke
+cpdf_setlinecap
+cpdf_setlinejoin
+cpdf_setlinewidth
+cpdf_setmiterlimit
+cpdf_setrgbcolor
+cpdf_setrgbcolor_fill
+cpdf_setrgbcolor_stroke
+cpdf_show
+cpdf_show_xy
+cpdf_stringwidth
+cpdf_stroke
+cpdf_text
+cpdf_translate
+crc32
+crypt
+curl_copy_handle
+current
+date
+date_sunrise
+date_sunset
+dba_close
+dba_delete
+dba_exists
+dba_fetch
+dba_firstkey
+dba_insert
+dba_key_split
+dba_nextkey
+dba_open
+dba_optimize
+dba_popen
+dba_replace
+dba_sync
+dbase_add_record
+dbase_close
+dbase_create
+dbase_delete_record
+dbase_get_header_info
+dbase_get_record
+dbase_get_record_with_names
+dbase_numfields
+dbase_numrecords
+dbase_open
+dbase_pack
+dbase_replace_record
+dblist
+dbmclose
+dbmdelete
+dbmexists
+dbmfetch
+dbmfirstkey
+dbminsert
+dbmnextkey
+dbmopen
+dbx_fetch_row
+debugger_off
+debugger_on
+decbin
+dechex
+decoct
+define
+defined
+deg2rad
+die
+dir
+dirname
+diskfreespace
+dl
+dmbreplace
+doubleval
+each
+easter_date
+easter_days
+echo
+empty
+end
+ereg
+ereg_replace
+eregi
+eregi_replace
+error_log
+error_reporting
+escapeshellcmd
+eval
+exec
+exit
+exp
+explode
+extension_loaded
+extract
+fbsql_set_password
+fclose
+fdf_close
+fdf_create
+fdf_get_file
+fdf_get_status
+fdf_get_value
+fdf_next_field_name
+fdf_open
+fdf_save
+fdf_set_ap
+fdf_set_file
+fdf_set_status
+fdf_set_value
+feof
+fgetc
+fgetcsv
+fgets
+fgetss
+file
+file_exists
+file_put_contents
+fileatime
+filectime
+filegroup
+fileinode
+filemtime
+fileowner
+fileperms
+filepro
+filepro_fieldcount
+filepro_fieldname
+filepro_fieldtype
+filepro_fieldwidth
+filepro_retrieve
+filepro_rowcount
+filesize
+filetype
+flock
+floor
+flush
+fopen
+fpassthru
+fputs
+fread
+frenchtojd
+fseek
+fsockopen
+ftell
+ftp_alloc
+ftp_cdup
+ftp_chdir
+ftp_connect
+ftp_delete
+ftp_fget
+ftp_fput
+ftp_get
+ftp_login
+ftp_mdtm
+ftp_mkdir
+ftp_nlist
+ftp_pasv
+ftp_put
+ftp_pwd
+ftp_quit
+ftp_rawlist
+ftp_rename
+ftp_rmdir
+ftp_site
+ftp_size
+ftp_systype
+func_get_arg
+func_get_args
+func_num_args
+function_exists
+fwrite
+get_browser
+get_cfg_var
+get_current_user
+get_declared_interfaces
+get_headers
+get_html_translation_table
+get_magic_quoted_gpc
+get_magic_quoted_runtime
+get_meta_tags
+getallheaders
+getdate
+getenv
+gethostbyaddr
+gethostbyname
+gethostbynamel
+getimagesize
+getlastmod
+getmxrr
+getmyinode
+getmypid
+getmyuid
+getprotbyname
+getprotobynumber
+getrandmax
+getrusage
+getservbyname
+getservbyport
+gettimeofday
+gettype
+gmdate
+gmmktime
+gmstrftime
+gregoriantojd
+gzclose
+gzcompress
+gzeof
+gzfile
+gzgetc
+gzgets
+gzgetss
+gzopen
+gzpassthru
+gzputs
+gzread
+gzrewind
+gzseek
+gztell
+gzuncompress
+gzwrite
+header
+headers_list
+hexdec
+htmlentities
+htmlspecialchars
+http_build_query
+hw_array2objrec
+hw_children
+hw_childrenobj
+hw_close
+hw_connect
+hw_cp
+hw_deleteobject
+hw_docbyanchor
+hw_docbyanchorobj
+hw_documentattributes
+hw_documentbodytag
+hw_documentcontent
+hw_documentsetcontent
+hw_documentsize
+hw_edittext
+hw_error
+hw_errormsg
+hw_free_document
+hw_getanchors
+hw_getanchorsobj
+hw_getandlock
+hw_getchildcoll
+hw_getchildcollobj
+hw_getchilddoccoll
+hw_getchilddoccollobj
+hw_getobject
+hw_getobjectbyquery
+hw_getobjectbyquerycoll
+hw_getobjectbyquerycollobj
+hw_getobjectbyqueryobj
+hw_getparents
+hw_getparentsobj
+hw_getremote
+hw_getremotechildren
+hw_getsrcbydestobj
+hw_gettext
+hw_getusername
+hw_identify
+hw_incollections
+hw_info
+hw_inscoll
+hw_insdoc
+hw_insertdocument
+hw_insertobject
+hw_mapid
+hw_modifyobject
+hw_mv
+hw_new_document
+hw_objrec2array
+hw_outputdocument
+hw_pconnect
+hw_pipedocument
+hw_root
+hw_unlock
+hw_who
+ibase_affected_rows
+ibase_backup
+ibase_close
+ibase_commit_ret
+ibase_connect
+ibase_db_info
+ibase_drop_db
+ibase_errcode
+ibase_execute
+ibase_fetch_object
+ibase_fetch_row
+ibase_free_event_handler
+ibase_free_query
+ibase_free_result
+ibase_gen_id
+ibase_maintain_db
+ibase_name_result
+ibase_num_fields
+ibase_num_params
+ibase_param_info
+ibase_pconnect
+ibase_prepare
+ibase_query
+ibase_restore
+ibase_rollback_ret
+ibase_server_info
+ibase_service_attach
+ibase_service_detach
+ibase_set_event_handler
+ibase_timefmt
+ibase_wait_event
+iconv_mime_decode
+iconv_mime_decode_headers
+iconv_mime_encode
+iconv_strlen
+iconv_strpos
+iconv_strrpos
+iconv_substr
+idate
+ifx_affected_rows
+ifx_blobinfile_mode
+ifx_byteasvarchar
+ifx_close
+ifx_connect
+ifx_copy_blob
+ifx_create_blob
+ifx_create_char
+ifx_do
+ifx_error
+ifx_errormsg
+ifx_fetch_row
+ifx_fieldproperties
+ifx_fieldtypes
+ifx_free_blob
+ifx_free_char
+ifx_free_result
+ifx_get_blob
+ifx_get_char
+ifx_getsqlca
+ifx_htmltbl_result
+ifx_nullformat
+ifx_num_fields
+ifx_num_rows
+ifx_pconnect
+ifx_prepare
+ifx_query
+ifx_textasvarchar
+ifx_update_blob
+ifx_update_char
+ifxus_close_slob
+ifxus_create_slob
+ifxus_free_slob
+ifxus_open_slob
+ifxus_read_slob
+ifxus_seek_slob
+ifxus_tell_slob
+ifxus_write_slob
+ignore_user_abort
+image_type_to_extension
+imagearc
+imagechar
+imagecharup
+imagecolorallocate
+imagecolorclosest
+imagecolordeallocate
+imagecolorexact
+imagecolorforindex
+imagecolorrat
+imagecolorresolve
+imagecolorset
+imagecolorstotal
+imagecolortransparent
+imagecopy
+imagecopyresized
+imagecreate
+imagecreateatefrompng
+imagecreatefromgif
+imagecreatefromjpeg
+imagedashedline
+imagedestroy
+imagefill
+imagefilledpolygon
+imagefilledrectangle
+imagefilltoborder
+imagefilter
+imagefontheght
+imagefonthwidth
+imagegammacorrect
+imagegettfbox
+imagegettftext
+imagegif
+imageinterlace
+imagejpeg
+imageline
+imageloadfont
+imagepng
+imagepsbbox
+imagepsencodefont
+imagepsextendfont
+imagepsfreefont
+imagepsloadfont
+imagepsslandfont
+imagepstext
+imagerectangle
+imagesetpixel
+imagestring
+imagestringup
+imagesx
+imagesy
+imagetypes
+imap_8bit
+imap_alerts
+imap_append
+imap_base64
+imap_binary
+imap_body
+imap_check
+imap_clearflag_full
+imap_close
+imap_createmailbox
+imap_delete
+imap_deletemailbox
+imap_errors
+imap_expunge
+imap_fetch_overview
+imap_fetchbody
+imap_fetchheader
+imap_fetchstructure
+imap_getacl
+imap_getmailboxes
+imap_getsubscribed
+imap_header
+imap_headers
+imap_last_error
+imap_listmailbox
+imap_listsubscribed
+imap_mail
+imap_mail_compose
+imap_mail_copy
+imap_mail_move
+imap_mailboxmsginfo
+imap_msgno
+imap_num_msg
+imap_num_recent
+imap_open
+imap_ping
+imap_qprint
+imap_renamemailbox
+imap_reopen
+imap_rfc822_parse_adrlist
+imap_rfc822_parse_headers
+imap_rfc822_write_address
+imap_scanmailbox
+imap_search
+imap_setflag_full
+imap_sort
+imap_status
+imap_subscribe
+imap_uid
+imap_undelete
+imap_unsubscribe
+imap_utf7_decode
+imap_utf7_encode
+imap_utf8
+implode
+in_array
+intval
+iptcparse
+is_array
+is_bool
+is_dir
+is_double
+is_executable
+is_file
+is_float
+is_int
+is_integer
+is_link
+is_long
+is_numeric
+is_object
+is_readable
+is_real
+is_string
+is_writeable
+isset
+jddayofweek
+jdmonthname
+jdtofrench
+jdtogregorian
+jdtojewish
+jdtojulian
+jdtounix
+jewishtojd
+join
+juliantojd
+key
+krsort
+ksort
+ldap_add
+ldap_bind
+ldap_close
+ldap_compare
+ldap_count_entries
+ldap_delete
+ldap_dn2ufn
+ldap_err2str
+ldap_errno
+ldap_error
+ldap_explode_dn
+ldap_first_attribute
+ldap_first_entry
+ldap_free_result
+ldap_get_attributes
+ldap_get_dn
+ldap_get_entries
+ldap_get_values
+ldap_get_values_len
+ldap_list
+ldap_mod_add
+ldap_mod_del
+ldap_mod_replace
+ldap_modify
+ldap_next_attribute
+ldap_next_entry
+ldap_read
+ldap_sasl_bind
+ldap_search
+ldap_unbind
+leak
+levenshtein
+link
+linkinfo
+list
+localtime
+log
+log10
+lstat
+ltrim
+mail
+max
+mb_list_encodings
+mcal_append_event
+mcal_close
+mcal_create_calendar
+mcal_date_compare
+mcal_date_valid
+mcal_day_of_week
+mcal_day_of_year
+mcal_days_in_month
+mcal_delete_calendar
+mcal_delete_event
+mcal_event_add_attribute
+mcal_event_init
+mcal_event_set_alarm
+mcal_event_set_category
+mcal_event_set_class
+mcal_event_set_description
+mcal_event_set_end
+mcal_event_set_recur_daily
+mcal_event_set_recur_monthly_mday
+mcal_event_set_recur_monthly_wday
+mcal_event_set_recur_none
+mcal_event_set_recur_weekly
+mcal_event_set_recur_yearly
+mcal_event_set_start
+mcal_event_set_title
+mcal_expunge
+mcal_fetch_current_stream_event
+mcal_fetch_event
+mcal_is_leap_year
+mcal_list_alarms
+mcal_list_events
+mcal_next_recurrence
+mcal_open
+mcal_popen
+mcal_rename_calendar
+mcal_reopen
+mcal_snooze
+mcal_store_event
+mcal_time_valid
+mccrypt_cbc
+mccrypt_cfb
+mcrypt_create_iv
+mcrypt_decrypt
+mcrypt_ecb
+mcrypt_enc_get_algorithms_name
+mcrypt_enc_get_block_size
+mcrypt_enc_get_iv_size
+mcrypt_enc_get_key_size
+mcrypt_enc_get_modes_name
+mcrypt_enc_get_supported_key_sizes
+mcrypt_enc_is_block_algorithm
+mcrypt_enc_is_block_algorithm_mode
+mcrypt_enc_is_block_mode
+mcrypt_enc_self_test
+mcrypt_encrypt
+mcrypt_generic
+mcrypt_generic_end
+mcrypt_generic_init
+mcrypt_get_block_size
+mcrypt_get_cipher_name
+mcrypt_get_iv_size
+mcrypt_get_key_size
+mcrypt_list_algorithms
+mcrypt_list_modes
+mcrypt_module_get_algo_block_size
+mcrypt_module_get_algo_key_size
+mcrypt_module_get_algo_supported_key_sizes
+mcrypt_module_is_block_algorithm
+mcrypt_module_is_block_algorithm_mode
+mcrypt_module_is_block_mode
+mcrypt_module_open
+mcrypt_module_self_test
+mcrypt_ofb
+md5
+mdecrypt_generic
+metaphone
+mhash
+mhash_count
+mhash_get_block_size
+mhash_get_hash_name
+microtime
+min
+mkdir
+mktime
+msql
+msql_affected_rows
+msql_close
+msql_connect
+msql_create_db
+msql_createdb
+msql_data_seek
+msql_dbname
+msql_drop_db
+msql_dropdb
+msql_error
+msql_fetch_array
+msql_fetch_field
+msql_fetch_object
+msql_fetch_row
+msql_field_seek
+msql_fieldflags
+msql_fieldlen
+msql_fieldname
+msql_fieldtable
+msql_fieldtype
+msql_free_result
+msql_freeresult
+msql_list_dbs
+msql_list_fields
+msql_list_tables
+msql_listdbs
+msql_listfields
+msql_listtables
+msql_num_fields
+msql_num_rows
+msql_numfields
+msql_numrows
+msql_pconnect
+msql_query
+msql_regcase
+msql_result
+msql_select_db
+msql_selectdb
+msql_tablename
+mssql_close
+mssql_connect
+mssql_data_seek
+mssql_fetch_array
+mssql_fetch_field
+mssql_fetch_object
+mssql_fetch_row
+mssql_field_length
+mssql_field_name
+mssql_field_seek
+mssql_field_type
+mssql_free_result
+mssql_get_last_message
+mssql_min_error_severity
+mssql_min_message_severity
+mssql_num_fields
+mssql_num_rows
+mssql_pconnect
+mssql_query
+mssql_result
+mssql_select_db
+mt_getrandmax
+mt_rand
+mt_srand
+mysql_affected_rows
+mysql_change_user
+mysql_close
+mysql_connect
+mysql_create_db
+mysql_data_seek
+mysql_db_name
+mysql_db_query
+mysql_drop_db
+mysql_errno
+mysql_error
+mysql_fetch_array
+mysql_fetch_field
+mysql_fetch_lengths
+mysql_fetch_object
+mysql_fetch_row
+mysql_field_flags
+mysql_field_len
+mysql_field_name
+mysql_field_seek
+mysql_field_table
+mysql_field_type
+mysql_free_result
+mysql_insert_id
+mysql_list_dbs
+mysql_list_fields
+mysql_list_tables
+mysql_num_fields
+mysql_num_rows
+mysql_pconnect
+mysql_query
+mysql_result
+mysql_select_db
+mysql_tablename
+next
+nl2br
+number_format
+ob_end_clean
+ob_end_flush
+ob_get_contents
+ob_implicit_flush
+ob_start
+ocibindbyname
+ocicolumnisnull
+ocicolumnname
+ocicolumnsize
+ocicolumntype
+ocicommit
+ocidefinebyname
+ocierror
+ociexecute
+ocifetch
+ocifetchinto
+ocifetchstatement
+ocifreecursor
+ocifreestatement
+ociinternaldebug
+ocilogoff
+ocilogon
+ocinewcursor
+ocinewdescriptor
+ocinlogon
+ocinumcols
+ociparse
+ociplogon
+ociresult
+ocirollback
+ocirowcount
+ociserverversion
+ocistatementtype
+octdec
+odbc_autocommit
+odbc_binmode
+odbc_close
+odbc_close_all
+odbc_commit
+odbc_connect
+odbc_cursor
+odbc_do
+odbc_exec
+odbc_execute
+odbc_fetch_into
+odbc_fetch_row
+odbc_field_len
+odbc_field_name
+odbc_field_type
+odbc_free_result
+odbc_longreadlen
+odbc_num_fields
+odbc_num_rows
+odbc_pconnect
+odbc_prepare
+odbc_result
+odbc_result_all
+odbc_rollback
+odbc_setoption
+opendir
+openlog
+ora_bind
+ora_close
+ora_columnname
+ora_columntype
+ora_commit
+ora_commitoff
+ora_commiton
+ora_error
+ora_errorcode
+ora_exec
+ora_fetch
+ora_getcolumn
+ora_logoff
+ora_logon
+ora_open
+ora_parse
+ora_rollback
+ord
+pack
+parse_str
+parse_url
+passthru
+pclose
+pcntl_getpriority
+pcntl_wait
+pdf_add_annotation
+pdf_add_outline
+pdf_arc
+pdf_begin_page
+pdf_circle
+pdf_clip
+pdf_close
+pdf_close_image
+pdf_closepath
+pdf_closepath_fill_stroke
+pdf_closepath_stroke
+pdf_continue_text
+pdf_curveto
+pdf_end_page
+pdf_endpath
+pdf_execute_image
+pdf_fill
+pdf_fill_stroke
+pdf_get_info
+pdf_lineto
+pdf_moveto
+pdf_open
+pdf_open_gif
+pdf_open_jpeg
+pdf_open_memory_image
+pdf_place_image
+pdf_put_image
+pdf_rect
+pdf_restore
+pdf_rotate
+pdf_save
+pdf_scale
+pdf_set_char_spacing
+pdf_set_duration
+pdf_set_font
+pdf_set_horiz_scaling
+pdf_set_info
+pdf_set_leading
+pdf_set_parameter
+pdf_set_text_matrix
+pdf_set_text_pos
+pdf_set_text_rendering
+pdf_set_text_rise
+pdf_set_transition
+pdf_set_word_spacing
+pdf_setdash
+pdf_setflat
+pdf_setgray
+pdf_setgray_fill
+pdf_setgray_stroke
+pdf_setlinecap
+pdf_setlinejoin
+pdf_setlinewidth
+pdf_setmiterlimit
+pdf_setrgbcolor
+pdf_setrgbcolor_fill
+pdf_setrgbcolor_stroke
+pdf_show
+pdf_show_boxed
+pdf_show_xy
+pdf_skew
+pdf_stringwidth
+pdf_stroke
+pdf_translate
+pfsockopen
+pg_close
+pg_cmdtuples
+pg_connect
+pg_dbname
+pg_errormessage
+pg_exec
+pg_fetch_array
+pg_fetch_object
+pg_fetch_row
+pg_fieldisnull
+pg_fieldname
+pg_fieldnum
+pg_fieldprtlen
+pg_fieldsize
+pg_fieldtype
+pg_freeresult
+pg_getlastoid
+pg_host
+pg_loclose
+pg_locreate
+pg_loopen
+pg_loread
+pg_loreadall
+pg_lounlink
+pg_lowrite
+pg_numfields
+pg_numrows
+pg_options
+pg_pconnect
+pg_port
+pg_result
+pg_tty
+pg_version
+php_check_syntax
+php_logo_guid
+php_sapi_name
+php_strip_whitespace
+phpcredits
+phpinfo
+phpversion
+pi
+popen
+pos
+posix_ctermid
+posix_getcwd
+posix_getegid
+posix_getgid
+posix_getgrgid
+posix_getgrnam
+posix_getgroups
+posix_getlogin
+posix_getpgid
+posix_getpgrp
+posix_getpid
+posix_getppid
+posix_getpwnam
+posix_getpwuid
+posix_getrlimit
+posix_getsid
+posix_getuid
+posix_isatty
+posix_kill
+posix_mkfifo
+posix_setgid
+posix_setpgid
+posix_setsid
+posix_setuid
+posix_times
+posix_ttyname
+posix_uname
+pow
+preg_grep
+preg_match
+preg_match_all
+preg_quote
+preg_replace
+preg_split
+prev
+print
+print_r
+printf
+proc_nice
+pspell_check
+pspell_config_data_dir
+pspell_config_dict_dir
+pspell_new
+pspell_suggest
+putenv
+quoted_printable_decode
+quotemeta
+rad2deg
+rand
+range
+rawurldecode
+rawurlencode
+readdir
+readfile
+readgzfile
+readlink
+recode
+recode_file
+recode_string
+register_shutdown_function
+rename
+reset
+rewind
+rewinddir
+rmdir
+round
+rsort
+sem_acquire
+sem_get
+sem_release
+serialize
+session_decode
+session_destroy
+session_encode
+session_id
+session_is_registered
+session_module_name
+session_name
+session_register
+session_save_path
+session_start
+session_unregister
+set_file_buffer
+set_magic_quotes_runtime
+set_socket_blocking
+set_time_limit
+setcookie
+setlocale
+setrawcookie
+settype
+shm_attach
+shm_detach
+shm_get_var
+shm_put_var
+shm_remove
+shm_remove_var
+shuffle
+similar_text
+sin
+sizeof
+sleep
+snmp_get_quick_print
+snmp_read_mib
+snmp_set_quick_print
+snmpget
+snmpset
+snmpwalk
+snmpwalkoid
+sort
+soundex
+split
+spliti
+sprintf
+sql_regcase
+sqlite_fetch_column_types
+sqrt
+srand
+stat
+str_repeat
+str_replace
+str_split
+strcasecmp
+strchr
+strcmp
+strcspn
+stream_copy_to_stream
+stream_get_line
+stream_socket_accept
+stream_socket_client
+stream_socket_get_name
+stream_socket_recvfrom
+stream_socket_sendto
+stream_socket_server
+strftime
+strip_tags
+stripcslashes
+stripslashes
+stristr
+strlen
+strpbrk
+strpos
+strrchr
+strrev
+strrpos
+strspn
+strstr
+strtok
+strtolower
+strtotime
+strtoupper
+strtr
+strval
+substr
+substr_compare
+substr_replace
+sybase_affected_rows
+sybase_close
+sybase_connect
+sybase_data_seek
+sybase_fetch_array
+sybase_fetch_field
+sybase_fetch_object
+sybase_fetch_row
+sybase_field_seek
+sybase_free_result
+sybase_num_fields
+sybase_num_rows
+sybase_pconnect
+sybase_query
+sybase_result
+sybase_select_db
+symlink
+syslog
+system
+tan
+tempnam
+time
+time_nanosleep
+touch
+trim
+uasort
+ucfirst
+ucwords
+uksort
+umask
+uniqid
+unixtojd
+unlink
+unpack
+unserialize
+unset
+urldecode
+urlencode
+usleep
+usort
+utf8_decode
+utf8_encode
+var_dump
+virtual
+vm_addalias
+vm_adduser
+vm_delails
+vm_deluser
+vm_passwd
+wddx_add_vars
+wddx_deserialize
+wddx_packet_end
+wddx_packet_start
+wddx_serialize_value
+wddx_serialize_vars
+xml_error_string
+xml_get_current_byte_index
+xml_get_current_column_number
+xml_get_current_line_number
+xml_get_error_code
+xml_parse
+xml_parser_create
+xml_parser_free
+xml_parser_get_option
+xml_parser_set_option
+xml_set_character_data_handler
+xml_set_default_handler
+xml_set_element_handler
+xml_set_external_entity_ref_handler
+xml_set_notation_decl_handler
+xml_set_object
+xml_set_processing_instruction_handler
+xml_set_unparsed_entity_decl_handler
+yp_err_string
+yp_errno
+yp_first
+yp_get_default_domain
+yp_master
+yp_match
+yp_next
+yp_order
+zend_logo_guid
+">
+							<Attributes Foreground="clBlue" Background="$00DADADA" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Constants" Enabled="True" Style="" Words="__class__
+__file__
+__function__
+__line__
+__method__
+arg
+argc
+auth_type
+cl_expunge
+cp_move
+cp_uid
+crypt_blowfish
+crypt_ext_des
+crypt_md5
+crypt_std_des
+document_root
+e_core_error
+e_core_warning
+e_error
+e_notice
+e_parse
+e_warning
+false
+ft_internal
+ft_peek
+ft_uid
+gateway_interface
+http_accept
+http_accept_charset
+http_accept_encoding
+http_accept_language
+http_connection
+http_encoding
+http_host
+http_referer
+http_user_agent
+latt_marked
+latt_noinferiors
+latt_noselect
+latt_unmarked
+lc_all
+lc_collate
+lc_ctype
+lc_monetary
+lc_numeric
+lc_time
+mcal_april
+mcal_august
+mcal_december
+mcal_february
+mcal_friday
+mcal_january
+mcal_july
+mcal_march
+mcal_maymcal_june
+mcal_monday
+mcal_november
+mcal_october
+mcal_recur_daily
+mcal_recur_monthly_mday
+mcal_recur_monthly_wday
+mcal_recur_none
+mcal_recur_weekly
+mcal_recur_yearly
+mcal_saturday
+mcal_september
+mcal_sunday
+mcal_thursday
+mcal_tuesday
+mcal_wednesday
+mcrypt_crypt
+mcrypt_des
+mcrypt_des_compat
+mcrypt_gost
+mcrypt_idea
+mcrypt_rc2
+mcrypt_rc6
+mcrypt_safer128
+mcrypt_safer64
+mcrypt_tean
+mcrypt_threeway
+mcrypt_tripledes
+mcrypt_twofish
+mcrypt_twofish128
+mcrypt_twofish192
+mhash_crc32
+mhash_crc32b
+mhash_gost
+mhash_haval
+mhash_md5
+mhash_ripemd128
+mhash_ripemd160
+mhash_sha1
+mhash_snefru
+mhash_tiger
+oci_assoc
+oci_b_blob
+oci_b_cfile
+oci_b_clob
+oci_b_file
+oci_b_rowid
+oci_commit_on_success
+oci_d_file
+oci_d_lob
+oci_d_rowid
+oci_default
+oci_num
+oci_return_lobs
+odbc_binmode_convert
+odbc_binmode_passthru
+odbc_binmode_return
+op_anonymous
+op_halfopen
+op_readonly
+path_translated
+pcre_anchored
+pcre_caseless
+pcre_dollar_endonly
+pcre_dotall
+pcre_extended
+pcre_extra
+pcre_multiline
+pcre_notbol
+pcre_noteol
+pcre_ungreedy
+pgsql_assoc
+pgsql_both
+pgsql_num
+php_auth_digest
+php_auth_pw
+php_auth_user
+php_os
+php_self
+php_version
+preg_pattern_order
+preg_set_order
+preg_split_no_empty
+query_string
+remote_addr
+remote_host
+remote_port
+request_method
+request_time
+request_uri
+return_nulls
+script_filename
+script_name
+server_admin
+server_name
+server_port
+server_protocol
+server_signature
+server_software
+sql_cur_default
+sql_cur_use_driver
+sql_cur_use_if_needed
+sql_cur_use_odbc
+true
+xml_error_async_entity
+xml_error_attribute_external_entity_ref
+xml_error_bad_char_ref
+xml_error_binary_entity_ref
+xml_error_duplicate_attribute
+xml_error_external_entity_handling
+xml_error_incorrect_encoding
+xml_error_invalid_token
+xml_error_junk_after_doc_element
+xml_error_misplaced_xml_pi
+xml_error_no_elements
+xml_error_no_memory
+xml_error_none
+xml_error_param_entity_ref
+xml_error_partial_char
+xml_error_recursive_entity_ref
+xml_error_syntax
+xml_error_tag_mismatch
+xml_error_unclosed_cdata_section
+xml_error_unclosed_token
+xml_error_undefined_entity
+xml_error_unknown_encoding
+xml_option_case_folding
+xml_option_target_encoding
+">
+							<Attributes Foreground="clOlive" Background="$00DADADA" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Brackets" Enabled="True" Style="" Words="[
+]
+(
+)
+{
+}
+;
+">
+							<Attributes Foreground="clBlack" Background="$00DADADA" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="COAndDirs" Enabled="True" Style="" Words="asp_tags
+auto_append_file
+auto_prepend_file
+bcmath.scale
+browcap
+cgi_ext
+debugger.enabled
+debugger.host
+debugger.port
+disable-short-tags
+disable-syntax-hl
+disable-unified-odbc
+display_errors
+doc_rood
+enable_dl
+enable-bcmath
+enable-c9x-inline
+enable-debug
+enable-debugger
+enable-discard-path
+enable-force-cgi-redirect
+enable-magic-quotes
+enable-safe-mode
+enable-sysvsem
+enable-sysvshm
+enable-track-vars
+enable-url-includes
+engine
+error_log
+error_reporting
+extension
+extension_dir
+gpc_order
+help
+ifx.allow_persistent
+ifx.blobinfile
+ifx.bytesasvarchar
+ifx.charasvarchar
+ifx.default_host
+ifx.default_password
+ifx.default_user
+ifx.max_links
+ifx.nullformat
+ifx.textasvarchar
+ignore_user_abort
+include_path
+isapi_ext
+ix.max_persistent
+log_errors
+magic_quotes_gpc
+magic_quotes_runtime
+magic_quotes_sybase
+max_execution_time
+memory_limit
+msql.allow_persistent
+msql.max_links
+msql.max_persistent
+mysql.allow_persistent
+mysql.default_host
+mysql.default_password
+mysql.default_user
+mysql.max_links
+mysql.max_persistent
+nsapi_ext
+open_basedir
+pgsql.allow_persistent
+pgsql.max_links
+pgsql.max_persistent
+php_admin_flag
+php_admin_value
+php_flag
+php_value
+safe_mode
+safe_mode_exec_dir
+sendmail_from
+sendmail_path
+short_open_tag
+smtp
+sql.safe_mode
+sybase.allow_persistent
+sybase.max_links
+sybase.max_persistent
+sybct.allow_persistent
+sybct.hostname
+sybct.login_timeout
+sybct.max_links
+sybct.max_persistent
+sybct.min_client_severity
+sybct.min_server_serveriny
+sybct.timeout
+track_errors
+track_vars
+uodbc.allow_persistent
+uodbc.default_db
+uodbc.default_pw
+uodbc.default_user
+uodbc.max_links
+uodbc.max_persistent
+upload_tmp_dir
+user_dir
+variable_order
+warn_plus_overloading
+with-adabas
+with-apache
+with-config-file-path
+with-custom-odbc
+with-dbase
+with-exec-dir
+with-fhttpd
+with-filepro
+with-iodbc
+with-ldap
+with-mcrypt
+with-msql
+with-mysql
+with-openlink
+with-oracle
+with-pgsql
+with-solid
+with-sybase
+with-sybase-ct
+with-system-regex
+with-velocis
+with-xml
+">
+							<Attributes Foreground="clGray" Background="$00DADADA" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Control" Enabled="True" Style="" Words="abstract
+break
+case
+catch
+class
+const
+continue
+default
+define
+do
+else
+elseif
+endfor
+endif
+endswitch
+endwhile
+extends
+final
+for
+foreach
+function
+if
+implements
+include
+ini_set
+instanceof
+interface
+null
+parent
+private
+protected
+public
+require
+require_once
+return
+switch
+throw
+try
+var
+while
+">
+							<Attributes Foreground="clBlack" Background="$00DADADA" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<Set Name="digits" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+							<Attributes Foreground="clFuchsia" Background="clNone"/>
+						</Set>
+					</SubRules>
+				</Range>
+				<Range Name="JavaScript" Style="">
+					<Attributes Foreground="$000000BF" Background="$00E5E5E5" ParentBackground="True"/>
+					<Delimiters Value="!$%&amp;'()*+,./;&lt;=&gt;?@[\]^{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&lt;script" Close="&lt;/script&gt;"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="Strings &quot;..&quot;" Style="">
+							<Attributes Foreground="clBlue" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="&quot;" Close="&quot;"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Strings '..'" Style="">
+							<Attributes Foreground="clBlue" Background="$00E5E5E5" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="'" Close="'"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Remarks //" Style="">
+							<Attributes Foreground="clGray" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="//" Close="--&gt;"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Remarks /*..*/" Style="">
+							<Attributes Foreground="clGray" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="/*" Close="*/"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="Methods" Enabled="True" Style="" Words="abs
+acos
+add
+alert
+anchor
+apply
+asin
+atan
+atan2
+atend
+atob
+back
+big
+blink
+blur
+bold
+borderwidths
+btoa
+buildpath
+call
+captureevents
+ceil
+charat
+charcodeat
+clearinterval
+cleartimeout
+click
+close
+compile
+concat
+confirm
+contextual
+copy
+copyfile
+copyfolder
+cos
+createfolder
+createtextfile
+crypto.random
+crypto.signtext
+datatainting
+delete
+deletefile
+deletefolder
+dimensions
+disableexternalcapture
+driveexists
+enableexternalcapture
+escape
+eval
+exec
+exists
+exp
+fileexists
+find
+fixed
+floor
+focus
+folderexists
+fontcolor
+fontsize
+forward
+fromcharcode
+getabsolutepathname
+getbasename
+getdate
+getday
+getdrive
+getdrivename
+getextensionname
+getfile
+getfilename
+getfileversion
+getfolder
+getfullyear
+gethours
+getitem
+getmilliseconds
+getminutes
+getmonth
+getparentfoldername
+getseconds
+getselection
+getspecialfolder
+gettempname
+gettime
+gettimezoneoffset
+getutcdate
+getutcday
+getutcfullyear
+getutchours
+getutcmilliseconds
+getutcminutes
+getutcmonth
+getutcseconds
+getvardate
+getyear
+go
+handleevent
+home
+indexof
+isfinite
+isnan
+italics
+item
+items
+javaenabled
+join
+keys
+lastindexof
+lbound
+link
+load
+log
+margins
+match
+max
+min
+move
+moveabove
+movebelow
+moveby
+movefile
+movefirst
+movefolder
+movenext
+moveto
+movetoabsolute
+number
+open
+openastextstream
+opentextfile
+paddings
+parse
+parsefloat
+parseint
+plugins.refresh
+pop
+pow
+preference
+print
+prompt
+push
+random
+read
+readall
+readline
+releaseevents
+reload
+remove
+removeall
+replace
+reset
+resizeby
+resizeto
+reverse
+round
+routeevent
+savepreferences
+scroll
+scrollby
+scrollto
+search
+select
+setdate
+setfullyear
+sethotkeys
+sethours
+setinterval
+setmilliseconds
+setminutes
+setmonth
+setresizable
+setseconds
+settime
+settimeout
+setutcdate
+setutcfullyear
+setutchours
+setutcmilliseconds
+setutcminutes
+setutcmonth
+setutcseconds
+setyear
+setzoptions
+shift
+sin
+skip
+skipline
+slice
+small
+sort
+splice
+split
+sqrt
+stop
+strike
+string
+sub
+submit
+substr
+substring
+sup
+taint
+taintenabled
+tan
+test
+toarray
+togmtstring
+tolocalestring
+tolowercase
+tosource
+tostring
+touppercase
+toutcstring
+ubound
+unescape
+unshift
+untaint
+unwatch
+utc
+valueof
+watch
+write
+writeblanklines
+writeline
+writeln
+">
+							<Attributes Foreground="$00FF51A8" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Properties" Enabled="True" Style="" Words="above
+action
+align
+alinkcolor
+anchors
+appcodename
+applets
+appname
+appversion
+arguments
+arguments.callee
+arguments.caller
+arguments.length
+arity
+atendofline
+atendofstream
+attributes
+availablespace
+availheight
+availleft
+availtop
+availwidth
+background
+backgroundcolor
+backgroundimage
+below
+bgcolor
+border
+borderbottomwidth
+bordercolor
+borderleftwidth
+borderrightwidth
+borderstyle
+bordertopwidth
+caller
+checked
+classes
+classname
+clear
+clip.bottom
+clip.height
+clip.left
+clip.right
+clip.top
+clip.width
+closed
+color
+colordepth
+column
+comparemode
+complete
+constructor
+cookie
+count
+crypto
+current
+data
+datecreated
+datelastaccessed
+datelastmodified
+defaultchecked
+defaultselected
+defaultstatus
+defaultvalue
+description
+display
+document
+domain
+drive
+driveletter
+drives
+drivetype
+e
+elements
+embeds
+enabledplugin
+encoding
+fgcolor
+filename
+files
+filesystem
+fontfamily
+fontsize
+fontstyle
+fontweight
+form
+formname
+forms
+frames
+freespace
+global
+hash
+height
+history
+host
+hostname
+href
+hspace
+ids
+ignorecase
+images
+index
+infinity
+innerheight
+innerwidth
+input
+isready
+isrootfolder
+item
+java
+key
+language
+lastindex
+lastmatch
+lastmodified
+lastparen
+layers
+layerx
+layery
+left
+leftcontext
+length
+line
+lineheight
+linkcolor
+links
+liststyletype
+ln10
+ln2
+location
+locationbar
+log10e
+log2e
+lowsrc
+marginbottom
+marginleft
+marginright
+margintop
+max_value
+menubar
+method
+mimetypes
+min_value
+modifiers
+multiline
+name
+nan
+negative_infinity
+netscape
+next
+number
+offscreenbuffering
+opener
+options
+outerheight
+outerwidth
+paddingbottom
+paddingleft
+paddingright
+paddingtop
+pagex
+pagexoffset
+pagey
+pageyoffset
+parent
+parentfolder
+parentlayer
+path
+pathname
+personalbar
+pi
+pixeldepth
+platform
+plugins
+port
+positive_infinity
+previous
+protocol
+prototype
+referrer
+rightcontext
+rootfolder
+screenx
+screeny
+scrollbars
+search
+selected
+selectedindex
+self
+serialnumber
+sharename
+shortname
+shortpath
+siblingabove
+siblingbelow
+size
+source
+sqrt1_2
+sqrt2
+src
+status
+statusbar
+subfolders
+suffixes
+sun
+tags
+target
+text
+textalign
+textdecoration
+textindent
+texttransform
+title
+toolbar
+top
+totalsize
+type
+undefined
+url
+useragent
+value
+visibility
+vlinkcolor
+volumename
+vspace
+which
+whitespace
+width
+window
+x
+y
+zindex
+">
+							<Attributes Foreground="$000000BF" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Events" Enabled="True" Style="" Words="onabort
+onafterprint
+onafterupdate
+onbeforecopy
+onbeforecut
+onbeforeeditfocus
+onbeforepaste
+onbeforeprint
+onbeforeunload
+onbeforeupdate
+onblur
+onbounce
+oncellchange
+onchange
+onclick
+oncontextmenu
+oncopy
+oncut
+ondataavailable
+ondatasetchanged
+ondatasetcomplete
+ondblclick
+ondrag
+ondragdrop
+ondragend
+ondragenter
+ondragleave
+ondragover
+ondragstart
+ondrop
+onerror
+onerrorupdate
+onfilterchange
+onfinish
+onfocus
+onhelp
+onkeydown
+onkeypress
+onkeyup
+onload
+onlosecapture
+onmousedown
+onmousemove
+onmouseout
+onmouseover
+onmouseup
+onmove
+onpaste
+onpropertychange
+onreadystatechange
+onreset
+onresize
+onrowenter
+onrowexit
+onrowsdelete
+onrowsinserted
+onscroll
+onselect
+onselectstart
+onstart
+onstop
+onsubmit
+onunload
+">
+							<Attributes Foreground="$0000C600" Background="$00E5E5E5" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Objects" Enabled="True" Style="" Words="activexobject
+anchor
+applet
+area
+array
+boolean
+button
+checkbox
+date
+dictionary
+document
+drive
+drives
+enumerator
+error
+event
+file
+files
+filesystemobject
+fileupload
+folder
+folders
+form
+frame
+function
+global
+hidden
+history
+image
+java
+javaarray
+javaclass
+javaobject
+javapackage
+layer
+link
+location
+math
+mimetype
+navigator
+netscape
+number
+object
+option
+packages
+parent
+password
+plugin
+radio
+regexp
+regularexpression
+reset
+screen
+select
+string
+style
+submit
+sun
+text
+textarea
+textstream
+this
+vbarray
+window
+">
+							<Attributes Foreground="$00BB7E00" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="KeyWords" Enabled="True" Style="" Words="boolean
+break
+byte
+case
+catch
+char
+class
+const
+continue
+debugger
+default
+delete
+do
+double
+else
+enum
+export
+extends
+false
+final
+finally
+float
+for
+function
+goto
+if
+implements
+import
+in
+instanceof
+int
+interface
+long
+native
+new
+null
+package
+private
+protected
+public
+return
+short
+static
+string
+super
+switch
+synchronized
+this
+throw
+throws
+transient
+true
+try
+typeof
+var
+void
+volatile
+while
+with
+">
+							<Attributes Foreground="$000000BF" Background="$00E5E5E5" ParentForeground="True" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Fake" Enabled="True" Style="" Words="t&quot;&gt;
+">
+							<Attributes Foreground="$000000BF" Background="$00E5E5E5" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Operators" Enabled="True" Style="" Words="[
+]
+">
+							<Attributes Foreground="$000000C4" Background="$00E5E5E5" ParentBackground="True"/>
+						</KeyList>
+						<KeyList Name="Comment1" Enabled="True" Style="" Words="&lt;!--
+--&gt;
+">
+							<Attributes Foreground="clGreen" Background="$00E5E5E5" ParentBackground="True" Style="I"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="php" Type="1">
+			<OpenToken Symbol="&lt;?"/>
+			<CloseToken Symbol="?&gt;"/>
+			<Properties AddEnding="True" WholeWords="True"/>
+			<SubRegions>
+				<FoldRegion Name="{}" Type="0">
+					<OpenToken Symbol="{"/>
+					<CloseToken Symbol="}"/>
+					<Properties AddEnding="True"/>
+					<SubRegions/>
+				</FoldRegion>
+				<FoldRegion Name="Remarks /*..*/" Type="1">
+					<OpenToken Symbol="/*"/>
+					<CloseToken Symbol="*/"/>
+					<Properties AddEnding="True" AllowNoSubs="True"/>
+					<SubRegions/>
+				</FoldRegion>
+			</SubRegions>
+		</FoldRegion>
+		<FoldRegion Name="css" Type="1">
+			<OpenToken Symbol="&lt;STYLE"/>
+			<CloseToken Symbol="&lt;/STYLE&gt;"/>
+			<Properties AddEnding="True" AllowNoSubs="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="script" Type="1">
+			<OpenToken Symbol="&lt;SCRIPT"/>
+			<CloseToken Symbol="&lt;/SCRIPT&gt;"/>
+			<Properties/>
+			<SubRegions>
+				<FoldRegion Name="{}" Type="0">
+					<OpenToken Symbol="{"/>
+					<CloseToken Symbol="}"/>
+					<Properties AddEnding="True"/>
+					<SubRegions/>
+				</FoldRegion>
+			</SubRegions>
+		</FoldRegion>
+		<FoldRegion Name="asp" Type="1">
+			<OpenToken Symbol="&lt;%"/>
+			<CloseToken Symbol="%&gt;"/>
+			<Properties AddEnding="True" AllowNoSubs="True"/>
+			<SubRegions>
+				<FoldRegion Name="{}" Type="0">
+					<OpenToken Symbol="{"/>
+					<CloseToken Symbol="}"/>
+					<Properties AddEnding="True"/>
+					<SubRegions/>
+				</FoldRegion>
+			</SubRegions>
+		</FoldRegion>
+		<FoldRegion Name="html" Type="1">
+			<OpenToken Symbol="&lt;HTML"/>
+			<CloseToken Symbol="&lt;/HTML&gt;"/>
+			<Properties/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="head" Type="1">
+			<OpenToken Symbol="&lt;HEAD"/>
+			<CloseToken Symbol="&lt;/HEAD&gt;"/>
+			<Properties/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="body" Type="1">
+			<OpenToken Symbol="&lt;BODY"/>
+			<CloseToken Symbol="&lt;/BODY&gt;"/>
+			<Properties/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="form" Type="1">
+			<OpenToken Symbol="&lt;FORM"/>
+			<CloseToken Symbol="&lt;/FORM&gt;"/>
+			<Properties/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="div" Type="1">
+			<OpenToken Symbol="&lt;DIV"/>
+			<CloseToken Symbol="&lt;/DIV&gt;"/>
+			<Properties/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="table" Type="1">
+			<OpenToken Symbol="&lt;TABLE"/>
+			<CloseToken Symbol="&lt;/TABLE&gt;"/>
+			<Properties/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="CommentBlockStart" Value="/*"/>
+		<Entry Name="CommentBlockMid" Value="# "/>
+		<Entry Name="CommentBlockEnd" Value="*/"/>
+		<Entry Name="FunctionDetect" Value="(function)\s+([a-z_]+[a-z_0-9]+)\;?\s*?(\([^\)]*?\))?\s*?\{"/>
+		<Entry Name="VariableDetect" Value="([^\$])(\$[a-z_]+[0-9a-z_]+)(\[[^\]\$]+\])?"/>
+		<Entry Name="CommentLine" Value="//"/>
+	</CustomData>
+</SynUniHighlighter>

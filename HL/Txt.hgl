@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="Text Files" Extensions="TXT LNG ME" Version="1" Revision="3" Sample="Данный плагин предоставляется &quot;как есть&quot; . Автор не дает гарантий,
+что плагин будет 'отвечать' всем ожидаемым требованиям.
+
+History
++ Добавлено
+- Исправлено
+* Изменено/удалено
+-------
+
+2.0 beta 2
+[*] Изменен формат и расположение INI файла цветовых схем
+[*] Восстановлен перенос строк (WordWrap)
+[+] Добавлены горячие клавиши. Некоторые работают только при просмотре.
+http://sepa.spb.ru" History=""/>
+			<Author Name="StayAtHome, Vitalik" Mail="stayathome@nm.ru" Web="www.stayathome.nm.ru" Copyright="© 2004" Company="" Remark="Some changes by Vitalik"/>
+		</Info>
+		<Schemes/>
+		<Editor ActiveLineColor="clDefault" SelectedForeground="clDefault" SelectedBackground="clSilver"/>
+		<MainRules Name="SyntaxColoring" Style="Root">
+			<Attributes Foreground="clBlack" Background="clWhite"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="Strings &quot;..&quot;" Style="">
+					<Attributes Foreground="$000061C1" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="&quot;"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="&quot;" Close="&quot;"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Strings '...'" Style="">
+					<Attributes Foreground="$00004E9B" Background="clSilver"/>
+					<Delimiters Value="'"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="'" Close="'"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Links" Style="">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True" Style="BU"/>
+					<Delimiters Value="&quot;'()*&lt;&gt;"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnTerm="True" CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="www."/>
+						<Tokens Open="http://"/>
+						<Tokens Open="mailto:"/>
+						<Tokens Open="ftp://"/>
+						<Tokens Open="file://"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="Symbols" Enabled="True" Style="" Words="!
+#
+$
+%
+&amp;
+*
++
+,
+-
+.
+/
+:
+;
+=
+?
+@
+\
+^
+`
+|
+~
+">
+					<Attributes Foreground="clMaroon" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Brackets" Enabled="True" Style="" Words="[
+]
+{
+}
+&lt;
+&gt;
+(
+)
+">
+					<Attributes Foreground="$008000FF" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<Set Name="Letters" Enabled="True" Style="" Symbols="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" Quantity="0">
+					<Attributes Foreground="clNavy" Background="clWhite" ParentBackground="True"/>
+				</Set>
+				<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+				</Set>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="Remarks /*..*/" Type="1">
+			<OpenToken Symbol="/*"/>
+			<CloseToken Symbol="*/"/>
+			<Properties AddEnding="True" AllowNoSubs="True"/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="CommentBlockStart" Value="/*"/>
+		<Entry Name="CommentBlockEnd" Value="*/"/>
+		<Entry Name="CommentBlockMid" Value="#"/>
+		<Entry Name="FunctionDetect" Value="(^)([^\s]+[а-яa-z0-9 ]+)\:\s*?$"/>
+		<Entry Name="CommentLine" Value="#"/>
+	</CustomData>
+</SynUniHighlighter>

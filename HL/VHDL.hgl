@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="VHDL" Extensions="VHD" Version="1" Revision="0" Sample="" History=""/>
+			<Author Name="Vexilurz" Mail="vexilurz@gmail.com" Web="msyst.ru" Copyright="(c) Vexilurz, 2014" Company="Msyst" Remark="спи жена из файла делфи"/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="SyntaxColoring" Style="Root">
+			<Attributes Foreground="clNone" Background="$80000005"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="Remarks {...}" Style="">
+					<Attributes Foreground="clFuchsia" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="IEEE." Close="."/>
+					</MultiTokens>
+					<SubRules>
+						<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+							<Attributes Foreground="clFuchsia" Background="$80000005" ParentForeground="True" ParentBackground="True" Style="I"/>
+						</Set>
+					</SubRules>
+				</Range>
+				<Range Name="Remarks (*...*)" Enabled="False" Style="Remarks (*...*)">
+					<Attributes Foreground="clNavy" Background="$80000005" ParentBackground="True" Style="I"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="(*" Close="*)"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Remarks //" CaseSensitive="True" Style="">
+					<Attributes Foreground="clGreen" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="--"/>
+					</MultiTokens>
+					<SubRules>
+						<Set Name="Russian symbols" Enabled="True" Style="" Symbols="АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя" Quantity="0">
+							<Attributes Foreground="clGreen" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+						</Set>
+					</SubRules>
+				</Range>
+				<Range Name="Strings" Style="Strings">
+					<Attributes Foreground="clGray" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="&quot;" Close="&quot;"/>
+					</MultiTokens>
+					<SubRules>
+						<KeyList Name="Symbols ''" Enabled="True" Style="" Words="''
+">
+							<Attributes Foreground="clGray" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="Directives" Enabled="False" Style="Directives">
+					<Attributes Foreground="clGreen" Background="$80000005" ParentBackground="True" Style="B"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="{$" Close="}"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Assembler" Enabled="False" Style="Assembler">
+					<Attributes Foreground="clBlack" Background="$00EEFFFF"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="asm" Close="end"/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="Remarks" Style="Remarks">
+							<Attributes Foreground="$00A00000" Background="$00EEFFFF" ParentBackground="True" Style="I"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine="" PartOfTerm="Right"/>
+							<CloseToken StartLine="" PartOfTerm="False"/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open="//"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="Hex" Style="Hex">
+							<Attributes Foreground="clMaroon" Background="$00EEFFFF" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine="" PartOfTerm="Right"/>
+							<CloseToken StartLine="" PartOfTerm="False"/>
+							<Properties CloseOnTerm="True"/>
+							<MultiTokens>
+								<Tokens Open="$"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<KeyList Name="Commands" Enabled="True" Style="" Words="aaa
+aad
+aam
+adc
+add
+and
+arpl
+bound
+bsf
+bsr
+bswap
+bt
+btc
+btr
+bts
+call
+cbw
+cdq
+clc
+cld
+cli
+clts
+cmc
+cmp
+cmps
+cmpsb
+cmpsd
+cmpsw
+cmpxchg
+cwd
+cwde
+daa
+das
+dec
+div
+emms
+enter
+f2xm1
+fabs
+fadd
+faddp
+fbld
+fbstp
+fchs
+fclex
+fcmovb
+fcmovbe
+fcmove
+fcmovnb
+fcmovnbe
+fcmovne
+fcmovnu
+fcmovu
+fcom
+fcomi
+fcomip
+fcomp
+fcompp
+fcos
+fdecstp
+fdiv
+fdivp
+fdivr
+fdivrp
+femms
+ffree
+fiadd
+ficom
+ficomp
+fidiv
+fidivr
+fild
+fimul
+fincstp
+finit
+fist
+fistp
+fisub
+fisubr
+fld
+fld1
+fldcw
+fldenv
+fldl2e
+fldl2t
+fldlg2
+fldln2
+fldpi
+fldz
+fmul
+fmulp
+fnclex
+fninit
+fnop
+fnsave
+fnstcw
+fnstenv
+fnstsw
+fpatan
+fprem1
+fptan
+frndint
+frstor
+fsave
+fscale
+fsin
+fsincos
+fsqrt
+fst
+fstcw
+fstenv
+fstp
+fstsw
+fsub
+fsubp
+fsubr
+fsubrp
+ftst
+fucom
+fucomi
+fucomip
+fucomp
+fucompp
+fwait
+fxch
+fxtract
+fyl2xp1
+hlt
+idiv
+imul
+in
+inc
+ins
+insb
+insd
+insw
+int
+into
+invd
+invlpg
+iret
+iretd
+iretw
+ja
+jae
+jb
+jbe
+jc
+jcxz
+je
+jecxz
+jg
+jge
+jl
+jle
+jmp
+jna
+jnae
+jnb
+jnbe
+jnc
+jne
+jng
+jnge
+jnl
+jnle
+jno
+jnp
+jns
+jnz
+jo
+jp
+jpe
+jpo
+js
+jz
+lahf
+lar
+lds
+lea
+leave
+les
+lfs
+lgdt
+lgs
+lidt
+lldt
+lmsw
+lock
+lods
+lodsb
+lodsd
+lodsw
+loop
+loope
+loopne
+loopnz
+loopz
+lsl
+lss
+ltr
+mov
+movd
+movq
+movs
+movsb
+movsd
+movsw
+movsx
+movzx
+mul
+neg
+nop
+not
+or
+out
+outs
+outsb
+outsd
+outsw
+packssdw
+packsswb
+packuswb
+paddb
+paddd
+paddsb
+paddsw
+paddusb
+paddusw
+paddw
+pand
+pandn
+pavgusb
+pcmpeqb
+pcmpeqd
+pcmpeqw
+pcmpgtb
+pcmpgtd
+pcmpgtw
+pf2id
+pfacc
+pfadd
+pfcmpeq
+pfcmpge
+pfcmpgt
+pfmax
+pfmin
+pfmul
+pfrcp
+pfrcpit1
+pfrcpit2
+pfrsqit1
+pfrsqrt
+pfsub
+pfsubr
+pi2fd
+pmaddwd
+pmulhrw
+pmulhw
+pmullw
+pop
+popa
+popad
+popaw
+popf
+popfd
+popfw
+por
+prefetch
+prefetchw
+pslld
+psllq
+psllw
+psrad
+psraw
+psrld
+psrlq
+psrlw
+psubb
+psubd
+psubsb
+psubsw
+psubusb
+psubusw
+psubw
+punpckhbw
+punpckhdq
+punpckhwd
+punpcklbw
+punpckldq
+punpcklwd
+push
+pusha
+pushad
+pushaw
+pushf
+pushfd
+pushfw
+pxor
+rcl
+rcr
+rep
+repe
+repne
+repnz
+repz
+ret
+rol
+ror
+sahf
+sal
+sar
+sbb
+scas
+scasb
+scasd
+scasw
+seta
+setae
+setb
+setbe
+setc
+sete
+setg
+setge
+setl
+setle
+setna
+setnae
+setnb
+setnbe
+setnc
+setne
+setng
+setnge
+setnl
+setnle
+setno
+setnp
+setns
+setnz
+seto
+setp
+setpo
+sets
+setz
+sgdt
+shl
+shld
+shr
+shrd
+sidt
+sldt
+smsw
+stc
+std
+sti
+stos
+stosb
+stosd
+stosw
+str
+sub
+test
+verr
+verw
+wait
+wbinvd
+xadd
+xchg
+xlat
+xlatb
+xor
+">
+							<Attributes Foreground="clNavy" Background="$00EEFFFF" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="Registers" Enabled="True" Style="" Words="EBX
+EAX
+ECX
+ax
+bx
+ah
+al
+ax
+bh
+bl
+bp
+bx
+ch
+cl
+cs
+cx
+dh
+di
+dl
+ds
+dx
+eax
+ebx
+ecx
+edi
+edx
+esi
+es
+ip
+si
+sp
+">
+							<Attributes Foreground="clNavy" Background="$00EEFFFF" ParentBackground="True" Style="B"/>
+						</KeyList>
+						<KeyList Name="end" Enabled="True" Style="" Words="end
+">
+							<Attributes Foreground="clBlack" Background="$00EEFFFF" ParentForeground="True" ParentBackground="True" Style="B"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="Char" Enabled="False" CaseSensitive="True" Style="Char">
+					<Attributes Foreground="clBlue" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnTerm="True" CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="#" Close=" "/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Address" Enabled="False" Style="Address">
+					<Attributes Foreground="clNavy" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="@"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Hex Numbers" Enabled="False" Style="Hex Numbers">
+					<Attributes Foreground="clMaroon" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="x&quot;" Close="&quot; "/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="Pascal Terms" Enabled="True" Style="" Words="abs
+access
+after
+alias
+all
+and
+architecture
+array
+assert
+attribute
+begin
+block
+body
+buffer
+bus
+case
+component
+configuration
+constant
+disconnect
+downto
+else
+elsif
+end
+entity
+exit
+file
+for
+function
+generate
+generic
+group
+guarded
+if
+impure
+in
+inertial
+inout
+is
+label
+library
+linkage
+literal
+loop
+map
+mod
+nand
+new
+next
+nor
+not
+null
+of
+on
+open
+or
+others
+out
+package
+port
+postponed
+procedure
+process
+pure
+range
+record
+register
+reject
+rem
+report
+return
+rol
+ror
+select
+severity
+signal
+shared
+sla
+sll
+sra
+srl
+subtype
+then
+to
+transport
+type
+unaffected
+units
+until
+use
+variable
+wait
+when
+while
+with
+xnor
+xor
+">
+					<Attributes Foreground="clBlue" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Standard types" Enabled="True" Style="" Words="bit
+bit_vector
+boolean
+character
+integer
+line
+natural
+positive
+real
+severity_level
+side
+std_logic
+std_logic_vector
+std_ulogic
+std_ulogic_vector
+text
+time
+ext
+sxt
+signed
+unsigned
+conv_integer
+conv_std_logic_vector
+conv_signed
+rising_edge
+">
+					<Attributes Foreground="clFuchsia" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Symbols" Enabled="True" Style="" Words="..
+:
+&lt;
+&gt;
+=
+/
+*
+.
+,
+-
++
+(
+)
+[
+]
+">
+					<Attributes Foreground="clNavy" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Registry Constants" Enabled="True" Style="" Words="OBUFDS
+ODDR
+">
+					<Attributes Foreground="clMaroon" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Result" Enabled="True" Style="" Words="">
+					<Attributes Foreground="clNavy" Background="$80000005" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<KeyList Name="Symbol ';'" Enabled="True" Style="" Words=";
+">
+					<Attributes Foreground="clNone" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Word 'asm'" Enabled="True" Style="" Words="">
+					<Attributes Foreground="clNone" Background="$00EEFFFF" ParentForeground="True" Style="B"/>
+				</KeyList>
+				<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+					<Attributes Foreground="clMaroon" Background="$80000005" ParentBackground="True"/>
+				</Set>
+				<Set Name="Float" Enabled="True" Style="" Symbols=".0123456789" Quantity="0">
+					<Attributes Foreground="clMaroon" Background="$80000005" ParentBackground="True"/>
+				</Set>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="begin" Type="1">
+			<OpenToken Symbol="BEGIN"/>
+			<CloseToken Symbol="END"/>
+			<Properties AddEnding="True" WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="record" Type="1">
+			<OpenToken Symbol="RECORD"/>
+			<CloseToken Symbol="END"/>
+			<Properties WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="class" Type="1">
+			<OpenToken Symbol="CLASS" RegExpr="[^.*]" UseRegExpr="True"/>
+			<CloseToken Symbol="END"/>
+			<Properties WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="try" Type="1">
+			<OpenToken Symbol="TRY"/>
+			<CloseToken Symbol="END"/>
+			<Properties AddEnding="True" WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="CommentBlockStart" Value="/*"/>
+		<Entry Name="CommentBlockMid" Value="# "/>
+		<Entry Name="CommentBlockEnd" Value="*/"/>
+		<Entry Name="FunctionDetect" Value="(function|procedure)\s+([a-z_]+[a-z_0-9\.\:]+)\s*?(\([^\)]*?\))?\s*?(\:\s*?[0-9a-z]+)?\s*?\;?\s*?(\/\/|\{)?(\sbegin|\svar|\sconst|\stype)"/>
+		<Entry Name="CommentLine" Value="//"/>
+	</CustomData>
+</SynUniHighlighter>

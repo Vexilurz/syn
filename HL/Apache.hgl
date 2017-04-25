@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="Apache conf" Extensions="CONF" Version="0" Revision="1" Sample="### Section 1: Global Environment
+#
+# ServerType is either inetd, or standalone.
+# Inetd mode is only supported on Unix platforms.
+
+ServerType standalone
+
+# ServerRoot: The top of the directory tree under which
+# the server's configuration, error, and log files are
+# kept.
+
+ServerRoot &quot;C:/Program Files/Apache Group/Apache&quot;" History=""/>
+			<Author Name="lsf" Mail="lsf82@mail.ru" Web="" Copyright="Copyright (c) Levickiy Sergey, 2004" Company="" Remark=""/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="Root" CaseSensitive="True" Style="">
+			<Attributes Foreground="clBlack" Background="clWhite" ParentBackground="True"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="Strings &quot;..&quot;" Style="">
+					<Attributes Foreground="clBlue" Background="clWhite"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&quot;" Close="&quot;"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Remarks #" Style="">
+					<Attributes Foreground="clGreen" Background="clWhite"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="#"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Strings '..'" Style="">
+					<Attributes Foreground="clBlue" Background="clWhite"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="'" Close="'"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="Key words" Enabled="True" Style="" Words="AccessConfig
+AccessFileName
+AddCharset
+AddDescription
+AddEncoding
+AddHandler
+AddIcon
+AddIconByEncoding
+AddIconByType
+AddLanguage
+AddModule
+AddType
+Alias
+Allow
+AllowOverride
+BindAddress
+BrowserMatch
+CacheDefaultExpire
+CacheGcInterval
+CacheLastModifiedFactor
+CacheMaxExpire
+CacheNegotiatedDocs
+CacheRoot
+CacheSize
+ClearModuleList
+CustomLog
+DefaultIcon
+DefaultType
+Deny
+Directory
+DirectoryIndex
+DocumentRoot
+ErrorDocument
+ErrorLog
+ExtendedStatus
+Files
+HeaderName
+HostnameLookups
+IfModule
+IndexIgnore
+IndexOptions
+KeepAlive
+KeepAliveTimeout
+LanguagePriority
+Limit
+LimitExcept
+Listen
+LoadModule
+Location
+LogFormat
+LogLevel
+MaxKeepAliveRequests
+MaxRequestsPerChild
+MetaDir
+MetaSuffix
+MIMEMagicFile
+NameVirtualHost
+NoCache
+Options
+Order
+PidFile
+Port
+ProxyRequests
+ProxyVia
+ReadmeName
+ResourceConfig
+Satisfy
+ScoreBoardFile
+ScriptAlias
+ScriptInterpreterSource
+ServerAdmin
+ServerName
+ServerRoot
+ServerSignature
+ServerType
+SetHandler
+ThreadsPerChild
+Timeout
+TypesConfig
+UseCanonicalName
+UserDir
+VirtualHost
+">
+					<Attributes Foreground="clPurple" Background="clWhite" Style="B"/>
+				</KeyList>
+				<KeyList Name="Attributes" Enabled="True" Style="" Words="None
+All
+Indexes
+Includes
+FollowSymLinks
+ExecCGI
+MultiViews
+FollowSymLinks
+Indexes
+MultiViews
+None
+Standalone
+inetd
+standalone
+deny
+from all
+allow
+On
+Off
+debug
+info
+notice
+warn
+error
+crit
+alert
+emerg
+ *
+">
+					<Attributes Foreground="clBlack" Background="clWhite" Style="B"/>
+				</KeyList>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding/>
+	<CustomData>
+		<Entry Name="FunctionDetect" Value="(\&lt;IfModule)\s+([a-z0-9_\.]+)\&gt;"/>
+		<Entry Name="VariableDetect" Value="^()(\w+)\s"/>
+		<Entry Name="CommentBlockStart" Value="#"/>
+		<Entry Name="CommentBlockMid" Value="#"/>
+		<Entry Name="CommentLine" Value="#"/>
+	</CustomData>
+</SynUniHighlighter>

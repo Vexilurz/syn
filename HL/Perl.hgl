@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="Perl" Extensions="PL CGI" Version="1" Revision="0" Sample="#!/bin/perl
+require &quot;cgi-lib.pl&quot;;
+use sigtrap;
+do 'envars.pl';
+$_ = @$password1;
+sub WriteBack{
+  while ($_ ne &quot;fred&quot;){
+    sleep 5;
+    $time[0] = abs(av_extend(basetime));
+  }
+}" History=""/>
+			<Author Name="Akulov Nikolay" Mail="delphiworld@mail.ru" Web="www.delphiworld.narod.ru" Copyright="Copyright (c) Akulov Nikolay, 2005" Company="" Remark=""/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="SyntaxColoring" Style="Root">
+			<Attributes Foreground="clBlack" Background="clWhite"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="Remark" Style="Remark">
+					<Attributes Foreground="clGray" Background="clWhite" ParentBackground="True" Style="I"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="#"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Strings" Style="Strings">
+					<Attributes Foreground="$00005EBB" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="&quot;" Close="&quot;"/>
+					</MultiTokens>
+					<SubRules>
+						<KeyList Name="Escape" Enabled="True" Style="" Words="?&gt;
+\'
+\&quot;
+\$
+\\
+\n
+\r
+\t
+&lt;?
+">
+							<Attributes Foreground="$000080FF" Background="clWhite" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="Strings2" Style="Strings2">
+					<Attributes Foreground="$000080FF" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties/>
+					<MultiTokens>
+						<Tokens Open="'" Close="'"/>
+					</MultiTokens>
+					<SubRules>
+						<KeyList Name="Escape" Enabled="True" Style="" Words="?&gt;
+\'
+\&quot;
+\$
+\\
+\n
+\r
+\t
+&lt;?
+">
+							<Attributes Foreground="$000080FF" Background="clWhite" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<Range Name="$" Style="$">
+					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnTerm="True"/>
+					<MultiTokens>
+						<Tokens Open="$"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<KeyList Name="Key words" Enabled="True" Style="" Words="__data__
+__end__
+__file__
+__line__
+-a
+alias
+and
+autoload
+autouse
+-b
+base
+begin
+blib
+boot
+-c
+can
+case
+charnames
+check
+cleanup
+clear
+cmp
+code
+constant
+continue
+core
+-d
+data
+destroy
+diagnostics
+die
+do
+dump
+-e
+each
+else
+elsif
+end
+eq
+exporter
+extend
+-f
+fetch
+fetchsize
+fields
+fileno
+firstkey
+for
+foreach
+-g
+ge
+getgrname
+goto
+gt
+if
+include
+init
+input
+integer
+isa
+-k
+-l
+last
+le
+less
+locale
+lt
+m
+-m
+module
+my
+ne
+new
+next
+nextkey
+no_init
+not
+-o
+ops
+or
+orototype
+our
+output
+overload
+-p
+package
+ppcode
+prefix
+preinit
+prototypes
+q
+qq
+qw
+qx
+-r
+readline
+redo
+require
+return
+s
+-s
+scope
+semgett
+sigtrap
+stderr
+stdin
+stdout
+store
+storesize
+strict
+sub
+subs
+super
+-t
+tiearray
+tied
+tiehandle
+tiehash
+tiescalar
+tr
+-u
+universal
+unless
+until
+vars
+version
+versioncheck
+vmsish
+-w
+while
+x
+-x
+xor
+y
+-z
+">
+					<Attributes Foreground="clBlack" Background="clWhite" ParentForeground="True" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<KeyList Name="Var" Enabled="True" Style="" Words="accumulator
+arg
+argv
+basetime
+child_error
+compiling
+debugging
+effective_group_id
+effective_user_id
+egid
+errno
+euid
+eval_error
+executable_name
+extended_os_error
+format_formfeed
+format_line_break_characters
+format_lines_left
+format_lines_per_page
+format_name
+format_page_number
+format_top_name
+gid
+inplace_editors
+input_line_number
+input_record_separator
+last_paren_match
+list_separator
+match
+multiline_matching
+nr
+ofmt
+ofs
+os_error
+osname
+output_autoflush
+output_field_separator
+output_record_separator
+perl_version
+perldb
+pid
+postmatch
+prematch
+process_id
+program_name
+real_group_id
+real_user_id
+rs
+subscript_separator
+subsep
+system_fd_max
+uid
+warning
+">
+					<Attributes Foreground="$00009D9D" Background="clWhite"/>
+				</KeyList>
+				<KeyList Name="Funcs" Enabled="True" Style="" Words="abs
+accept
+alarm
+atan2
+bind
+binmode
+bless
+caller
+chdir
+chmod
+chomp
+chop
+chown
+chr
+chroot
+close
+closedir
+connect
+cos
+crypt
+dbmclose
+dbmopen
+defined
+delete
+endgrent
+endhostent
+endnetent
+endprotoent
+endpwent
+endservent
+eof
+eval
+exec
+exists
+exit
+exp
+fcntl
+flock
+fork
+format
+formline
+getc
+getgrent
+getgrgid
+getgrnam
+gethostbyaddr
+gethostbyname
+gethostent
+getlogin
+getnetbyaddr
+getnetbyname
+getnetent
+getpeername
+getpgrp
+getppid
+getpriority
+getprotobyname
+getprotobynumber
+getprotoent
+getpwent
+getpwnam
+getpwuid
+getservbyname
+getservbyport
+getservent
+getsockname
+getsockopt
+glob
+gmtime
+grep
+hex
+import
+index
+int
+ioctl
+join
+keys
+kill
+lc
+lcfirst
+length
+link
+listen
+local
+localtime
+log
+lstat
+map
+mkdir
+msgctl
+msgget
+msgrcv
+msgsnd
+no
+oct
+open
+opendir
+ord
+pack
+pipe
+pop
+pos
+print
+printf
+push
+quotemeta
+rand
+read
+readdir
+readlink
+recv
+ref
+rename
+require
+reset
+reverse
+rewinddir
+rindex
+rmdir
+scalar
+seek
+seekdir
+select
+semctl
+semget
+semop
+send
+setgrent
+sethostent
+setnetent
+setpgrp
+setpriority
+setprotoent
+setpwent
+setservent
+setsockopt
+shift
+shmctl
+shmget
+shmread
+shmwrite
+shutdown
+sin
+sleep
+socket
+socketpair
+sort
+splice
+split
+sprintf
+sqrt
+srand
+stat
+study
+substr
+symlink
+syscall
+sysread
+system
+syswrite
+tell
+telldir
+tie
+time
+times
+truncate
+uc
+ucfirst
+umask
+undef
+unlink
+unpack
+unshift
+untie
+use
+utime
+values
+vec
+wait
+waitpid
+wantarray
+warn
+write
+">
+					<Attributes Foreground="$00FF1A8C" Background="clWhite" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<KeyList Name="API" Enabled="True" Style="" Words="av_clear
+av_extend
+av_fetch
+av_len
+av_make
+av_pop
+av_push
+av_shift
+av_store
+av_undef
+av_unshift
+avfill
+class
+copy
+croak
+cvstash
+dbsingle
+dbsub
+dbtrace
+dmark
+dorigmark
+dowarn
+dsp
+dxsargs
+dxsi32
+enter
+extend
+freetmps
+g_array
+g_discard
+g_eval
+g_noargs
+g_scalar
+gimme
+gv_fetchmeth
+gv_fetchmethod
+gv_stashpv
+gv_stashsv
+gvsv
+he_delayfree
+he_free
+hef_svkey
+hehash
+hekey
+heklen
+hepv
+hesvkey
+hesvkey_force
+hesvkey_set
+heval
+hv_clear
+hv_delete
+hv_delete_ent
+hv_exists
+hv_exists_ent
+hv_fetch
+hv_fetch_ent
+hv_iterinit
+hv_iterkey
+hv_iterkeysv
+hv_iternext
+hv_iternextsv
+hv_iterval
+hv_magic
+hv_store
+hv_store_ent
+hv_undef
+hvname
+isalnum
+isalpha
+isdigit
+islower
+isspace
+isupper
+items
+ix
+leave
+mark
+mg_clear
+mg_copy
+mg_find
+mg_free
+mg_get
+mg_len
+mg_magical
+mg_set
+move
+na
+new
+newav
+newc
+newhv
+newrv_inc
+newrv_noinc
+newsv
+newsviv
+newsvnv
+newsvpv
+newsvrv
+newsvsv
+newxs
+newxsproto
+newz
+nullav
+nullch
+nullcv
+nullhv
+nullsv
+origmark
+perl_alloc
+perl_call_argv
+perl_call_method
+perl_call_pv
+perl_call_sv
+perl_construct
+perl_destruct
+perl_eval_sv
+perl_free
+perl_get_av
+perl_get_cv
+perl_get_hv
+perl_get_sv
+perl_parse
+perl_require_pv
+perl_run
+popi
+popl
+popn
+popp
+pops
+pushi
+pushmark
+pushn
+pushp
+pushs
+putback
+renew
+renewc
+retval
+safefree
+safemalloc
+saferealloc
+savepv
+savepvn
+savetmps
+sp
+spagain
+st
+streq
+strge
+strgt
+strle
+strlt
+strne
+strneq
+strnne
+sv_2mortal
+sv_bless
+sv_catpv
+sv_catpvn
+sv_catsv
+sv_cmp
+sv_dec
+sv_eq
+sv_grow
+sv_inc
+sv_isa
+sv_isobject
+sv_len
+sv_magic
+sv_mortalcopy
+sv_newmortal
+sv_no
+sv_setiv
+sv_setnv
+sv_setpv
+sv_setpvn
+sv_setref_iv
+sv_setref_nv
+sv_setref_pv
+sv_setref_pvn
+sv_setsv
+sv_undef
+sv_unref
+sv_upgrade
+sv_usepvn
+sv_yes
+svcur
+svcur_set
+svend
+svgrow
+sviok
+sviok_off
+sviok_on
+sviok_only
+sviokp
+sviv
+svlen
+svniok
+svniok_off
+svniokp
+svnok
+svnok_off
+svnok_on
+svnok_only
+svnokp
+svnv
+svnvx
+svok
+svpok
+svpok_off
+svpok_on
+svpok_onlu
+svpokp
+svpv
+svpvx
+svrefcnt
+svrefcnt_dec
+svrefcnt_inc
+svrok
+svrok_off
+svrok_on
+svrv
+svstash
+svt_iv
+svt_nv
+svt_pv
+svt_pvav
+svt_pvcv
+svt_pvhv
+svt_pvmg
+svtrue
+svtype
+svupgrade
+svvx
+this
+tolower
+toupper
+warn
+xpushi
+xpushn
+xpushp
+xpushs
+xs
+xs_version
+xs_version_bootcheck
+xsreturn
+xsreturn_empty
+xsreturn_iv
+xsreturn_no
+xsreturn_nv
+xsreturn_pv
+xsreturn_undef
+xsreturn_yes
+xst_miv
+xst_mno
+xst_mnv
+xst_mpv
+xst_mundef
+xst_myes
+zero
+">
+					<Attributes Foreground="$00FA05CF" Background="clWhite" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<KeyList Name="Symbols" Enabled="True" Style="" Words="-
+--
+!
+!=
+%
+&amp;
+&amp;&amp;
+*
+*=
+.
+.=
+/=
+:
+?
+@
+[
+]
+^
+|
+||
+~
++
+++
++=
+&lt;
+&lt;&lt;
+&lt;=
+=
+-=
+==
+=&gt;
+&gt;
+-&gt;
+&gt;&gt;
+and
+or
+xor
+">
+					<Attributes Foreground="$0000B000" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Brackets" Enabled="True" Style="" Words="[
+]
+">
+					<Attributes Foreground="$000000BF" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="@" Enabled="True" Style="" Words="$@
+@
+">
+					<Attributes Foreground="$000080FF" Background="clWhite" ParentBackground="True"/>
+				</KeyList>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="{}" Type="0">
+			<OpenToken Symbol="{"/>
+			<CloseToken Symbol="}"/>
+			<Properties AddEnding="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="Remarks /*..*/" Type="1">
+			<OpenToken Symbol="/*"/>
+			<CloseToken Symbol="*/"/>
+			<Properties AddEnding="True" AllowNoSubs="True"/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="FunctionDetect" Value="(function|sub)\s*?([a-z]+[a-z0-9_.]*?)\s*?(\([^)]\))?\s*?\{"/>
+		<Entry Name="CommentBlockStart" Value="#"/>
+		<Entry Name="CommentLine" Value="#"/>
+		<Entry Name="CommentBlockMid" Value="#"/>
+	</CustomData>
+</SynUniHighlighter>

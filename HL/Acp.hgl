@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="ACP" Extensions="ACP" Version="1" Revision="0" Sample="number abs(mixed number) |Absolute value (PHP 3, PHP 4, PHP 5)
+float acos(float arg) |Arc cosine (PHP 3, PHP 4, PHP 5)
+
+ ord(char: char):byte |Delphi ord
+byte ord(char: char) |Delphi ord
+
+void main |C++" History=""/>
+			<Author Name="sepa" Mail="sepich@rambler.ru" Web="http://sepa.spb.ru" Copyright="2006" Company="" Remark="Autocomplete files for Syn &amp; SynTree"/>
+		</Info>
+		<Schemes>
+			<Scheme Name="Default">
+				<Editor/>
+				<Styles/>
+			</Scheme>
+		</Schemes>
+		<Editor/>
+		<MainRules Name="SyntaxColoring" Style="">
+			<Attributes Foreground="clGreen" Background="clWindow"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="function" Style="">
+					<Attributes Foreground="clBlue" Background="clWindow" ParentBackground="True" Style="B"/>
+					<Delimiters Value=""/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open=" "/>
+					</MultiTokens>
+					<SubRules>
+						<Range Name="parameters" Style="">
+							<Attributes Foreground="$00002953" Background="clWindow" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties/>
+							<MultiTokens>
+								<Tokens Open="(" Close=")"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="description" Style="">
+							<Attributes Foreground="$00676767" Background="clWindow" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True" AllowPredClose="True"/>
+							<MultiTokens>
+								<Tokens Open="|"/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+						<Range Name="type" Style="">
+							<Attributes Foreground="clGreen" Background="clWindow" ParentBackground="True"/>
+							<Delimiters Value="!&quot;#$%&amp;'()*+,-./;&lt;=&gt;?@[\]^`{|}~"/>
+							<OpenToken StartLine=""/>
+							<CloseToken StartLine=""/>
+							<Properties CloseOnEol="True"/>
+							<MultiTokens>
+								<Tokens Open=":" Close=" "/>
+							</MultiTokens>
+							<SubRules/>
+						</Range>
+					</SubRules>
+				</Range>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding/>
+	<CustomData/>
+</SynUniHighlighter>
