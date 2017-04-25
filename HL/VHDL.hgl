@@ -2,8 +2,53 @@
 <SynUniHighlighter Version="2.0">
 	<SyntaxColoring>
 		<Info>
-			<General Name="VHDL" Extensions="VHD" Version="1" Revision="0" Sample="" History=""/>
-			<Author Name="Vexilurz" Mail="vexilurz@gmail.com" Web="msyst.ru" Copyright="(c) Vexilurz, 2014" Company="Msyst" Remark="спи жена из файла делфи"/>
+			<General Name="VHDL" Extensions="VHD" Version="1" Revision="0" 
+Sample="----------------------------------------------------------------------------------
+-- Company: Measurements Systems
+-- Engineer: Potekhin S.D. (Vexilurz)
+----------------------------------------------------------------------------------
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.ALL;
+
+entity core is
+    Port (clk : in STD_LOGIC;
+          -- KF532
+          cpu_addr : in  std_logic_vector;
+          cpu_data : in  std_logic_vector;
+          cpu_dio  : out std_logic_vector;
+          cpu_iowr : in  std_logic);
+end core;
+
+architecture Behavioral of core is
+
+constant ValueLen: integer := 32;
+constant BaseAddr: integer := 65536 * 3;
+signal Value: std_logic_vector(ValueLen-1 downto 0) := (others =&gt; '0');
+
+begin
+
+process(clk)
+begin
+  if rising_edge(clk) then
+    if cpu_iowr = '1' then
+      case conv_integer(cpu_addr) is
+        when BaseAddr =&gt;
+          Value &lt;= cpu_data(Value'range);
+        when others =&gt; 
+	  null;
+      end case;
+    end if;
+  end if;
+end process;
+
+with conv_integer(cpu_addr) select
+  cpu_dio &lt;= (others =&gt; 'Z') when others;
+
+end Behavioral;
+"
+History=""/>
+			<Author Name="Vexilurz" Mail="vexilurz@gmail.com" Web="http://msyst.ru" Copyright="(c) Vexilurz, 2014-2017" Company="Msyst" Remark="Remastered from pascal file"/>
 		</Info>
 		<Schemes/>
 		<Editor/>

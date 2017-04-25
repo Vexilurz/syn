@@ -2,16 +2,37 @@
 <SynUniHighlighter Version="2.0">
 	<SyntaxColoring>
 		<Info>
-			<General Name="Forth" Extensions="f fpm kf" Version="1" Revision="3" Sample="VARIABLE A
+			<General Name="Forth" Extensions="f fpm kf" Version="1" Revision="0" 
+Sample="// Comment line
+VARIABLE A
+{ 0 A ! }
 1 CONSTANT _1
 256 ARRAY testArr
 : test
  1 2 3 DUP DROP + * DROP
  256 0 DO
   I MOD 2 + IF 0 ELSE 1 THEN testArr I -TH !
+  A @ 1 + A !
  LOOP
-;" History=""/>
-			<Author Name="whiteTigr" Mail="" Web="" Copyright="(c) whiteTigr, 2009" Company="msyst" Remark="Based on Vitaly Nevzorov highlighter"/>
+;
+
+// for Proteus compiler
+                 // «апись программы
+#COM 5           // по нужному COM-порту
+#BAUDRATE 115200 // с нужной скоростью
+#PACKSIZE= 16     // пакетами по PACKSIZE байт
+#WAITCOEF= 2     // с задержкой, вычисл€емой по формуле
+                 // (PackSize * 8 / BaudRate) * WaitCoef секунд
+#MaxCode= 16384
+#MaxData= 32768
+&quot; proteus.lib&quot; L
+
+MAIN:
+BEGIN
+
+AGAIN
+" History=""/>
+			<Author Name="whiteTigr, Vexilurz" Mail="vexilurz@gmail.com" Web="http://msyst.ru" Copyright="(c) whiteTigr, Vexilurz 2009-2017" Company="msyst" Remark="Based on Vitaly Nevzorov highlighter"/>
 		</Info>
 		<Schemes/>
 		<Editor SelectedBackground="clSilver"/>
@@ -447,6 +468,7 @@ WRITEFILE
 X0Y0
 XCHG
 XOR
+INLINE
 ">
 					<Attributes Foreground="clNavy" Background="clWhite" Style="B"/>
 				</KeyList>
@@ -454,24 +476,28 @@ XOR
 ;
 ALLOT
 ARRAY
-BEGIN
 CONSTANT
 CREATE
-DO
 ELSE
 ENDPROC
-IF
-LOOP
 PROC
 QUAN
-THEN
 TO
-UNTIL
 VALUE
 VARIABLE
 VECT
 ">
 					<Attributes Foreground="clMaroon" Background="clWhite" ParentBackground="True" Style="B"/>
+				</KeyList>
+				<KeyList Name="KF terms" Enabled="True" Style="" Words="#COM
+#BAUDRATE
+#PACKSIZE=
+#WAITCOEF=
+#MaxCode=
+#MaxData=
+MAIN:
+">
+					<Attributes Foreground="clBlack" Background="clWhite" ParentBackground="True" Style="B"/>
 				</KeyList>
 				<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
 					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
@@ -504,6 +530,12 @@ VECT
 		<FoldRegion Name="beginuntil" Type="2">
 			<OpenToken Symbol="BEGIN"/>
 			<CloseToken Symbol="UNTIL"/>
+			<Properties WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+		<FoldRegion Name="beginagain" Type="0">
+			<OpenToken Symbol="BEGIN"/>
+			<CloseToken Symbol="AGAIN"/>
 			<Properties WholeWords="True"/>
 			<SubRegions/>
 		</FoldRegion>

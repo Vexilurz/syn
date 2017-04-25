@@ -19,17 +19,9 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
     x -= 0xff;
     x -= 023;
     x += 1.0;
-    x += @; /* illegal character */
   }
-  #ifdef USE_ASM
-    asm
-    {
-      ASM MOV AX, 0x1234
-      ASM MOV i, AX
-    }
-  #endif
 }" History=""/>
-			<Author Name="Vexilurz" Mail="v-e-t-a-l@ukr.net; vetal-x@mail.ru" Web="" Copyright="© Vitaly Lyapota, 2004" Company="N/A" Remark="Based on Vitaly Nevzorov highlighter"/>
+			<Author Name="Vexilurz" Mail="vexilurz@gmail.com" Web="http://msyst.ru" Copyright="© Vexilurz, 2017" Company="MSYST" Remark="Based on Vitaly Nevzorov highlighter"/>
 		</Info>
 		<Schemes/>
 		<Editor/>
@@ -212,6 +204,8 @@ override
 #endif
 #ifndef
 #undef
+#region
+#endregion
 ">
 					<Attributes Foreground="$00FF0080" Background="clWhite" ParentBackground="True"/>
 				</KeyList>
@@ -229,6 +223,7 @@ override
 *
 ^
 :
+@
 ">
 					<Attributes Foreground="clPurple" Background="clWhite" ParentBackground="True"/>
 				</KeyList>
@@ -250,7 +245,6 @@ override
 				</KeyList>
 				<KeyList Name="Known classes" Enabled="True" Style="" Words="Thread
 UdpClient
-Int32
 Marshal
 IntPtr
 Boolean
@@ -264,15 +258,17 @@ Char
 Decimal
 Double
 Single
+Int32
 UInt32
 Int64
 UInt64
-Object
 Int16
 UInt16
 System
 Math
 MemoryStream
+SerialPort
+Object
 ">
 					<Attributes Foreground="clTeal" Background="clWhite" ParentBackground="True"/>
 				</KeyList>
