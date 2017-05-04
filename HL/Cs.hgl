@@ -189,6 +189,7 @@ ulong
 partial
 where
 override
+abstract
 ">
 					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
 				</KeyList>
