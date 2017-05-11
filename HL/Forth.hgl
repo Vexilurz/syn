@@ -2,8 +2,7 @@
 <SynUniHighlighter Version="2.0">
 	<SyntaxColoring>
 		<Info>
-			<General Name="Forth" Extensions="f fpm kf" Version="1" Revision="0" 
-Sample="// Comment line
+			<General Name="Forth" Extensions="f fpm kf lib" Version="1" Revision="0" Sample="// Comment line
 VARIABLE A
 { 0 A ! }
 1 CONSTANT _1
@@ -30,8 +29,7 @@ VARIABLE A
 MAIN:
 BEGIN
 
-AGAIN
-" History=""/>
+AGAIN" History=""/>
 			<Author Name="whiteTigr, Vexilurz" Mail="vexilurz@gmail.com" Web="http://msyst.ru" Copyright="(c) whiteTigr, Vexilurz 2009-2017" Company="msyst" Remark="Based on Vitaly Nevzorov highlighter"/>
 		</Info>
 		<Schemes/>
@@ -50,17 +48,6 @@ AGAIN
 						<Tokens Open="// "/>
 					</MultiTokens>
 					<SubRules>
-						<Range Name="New" CaseSensitive="True" Style="">
-							<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True" Style="I"/>
-							<Delimiters Value=""/>
-							<OpenToken StartLine=""/>
-							<CloseToken StartLine=""/>
-							<Properties CloseOnEol="True"/>
-							<MultiTokens>
-								<Tokens Open="\ "/>
-							</MultiTokens>
-							<SubRules/>
-						</Range>
 						<Set Name="Russian symbols" Enabled="True" Style="" Symbols="ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖ×ØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõö÷øùúûüýþÿ" Quantity="0">
 							<Attributes Foreground="clGreen" Background="clWhite" ParentForeground="True" ParentBackground="True"/>
 						</Set>
@@ -90,6 +77,17 @@ AGAIN
 					<Properties CloseOnTerm="True"/>
 					<MultiTokens>
 						<Tokens Open="0x"/>
+					</MultiTokens>
+					<SubRules/>
+				</Range>
+				<Range Name="Remarks \" CaseSensitive="True" Style="">
+					<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True" Style="I"/>
+					<Delimiters Value=""/>
+					<OpenToken StartLine=""/>
+					<CloseToken StartLine=""/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="\ "/>
 					</MultiTokens>
 					<SubRules/>
 				</Range>
