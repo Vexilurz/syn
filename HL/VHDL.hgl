@@ -2,8 +2,7 @@
 <SynUniHighlighter Version="2.0">
 	<SyntaxColoring>
 		<Info>
-			<General Name="VHDL" Extensions="VHD" Version="1" Revision="0" 
-Sample="----------------------------------------------------------------------------------
+			<General Name="VHDL" Extensions="VHD" Version="1" Revision="0" Sample="----------------------------------------------------------------------------------
 -- Company: Measurements Systems
 -- Engineer: Potekhin S.D. (Vexilurz)
 ----------------------------------------------------------------------------------
@@ -45,9 +44,7 @@ end process;
 with conv_integer(cpu_addr) select
   cpu_dio &lt;= (others =&gt; 'Z') when others;
 
-end Behavioral;
-"
-History=""/>
+end Behavioral;" History=""/>
 			<Author Name="Vexilurz" Mail="vexilurz@gmail.com" Web="http://msyst.ru" Copyright="(c) Vexilurz, 2014-2017" Company="Msyst" Remark="Remastered from pascal file"/>
 		</Info>
 		<Schemes/>
@@ -702,6 +699,9 @@ while
 with
 xnor
 xor
+true
+false
+null
 ">
 					<Attributes Foreground="clBlue" Background="$80000005" ParentBackground="True"/>
 				</KeyList>
