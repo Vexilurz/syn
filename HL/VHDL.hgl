@@ -2,7 +2,7 @@
 <SynUniHighlighter Version="2.0">
 	<SyntaxColoring>
 		<Info>
-			<General Name="VHDL" Extensions="VHD" Version="1" Revision="0" Sample="----------------------------------------------------------------------------------
+			<General Name="VHDL" Extensions="VHD, VHO, VHDL" Version="1" Revision="1" Sample="----------------------------------------------------------------------------------
 -- Company: Measurements Systems
 -- Engineer: Potekhin S.D. (Vexilurz)
 ----------------------------------------------------------------------------------
@@ -45,7 +45,7 @@ with conv_integer(cpu_addr) select
   cpu_dio &lt;= (others =&gt; 'Z') when others;
 
 end Behavioral;" History=""/>
-			<Author Name="Vexilurz" Mail="vexilurz@gmail.com" Web="http://msyst.ru" Copyright="(c) Vexilurz, 2014-2017" Company="Msyst" Remark="Remastered from pascal file"/>
+			<Author Name="Vexilurz" Mail="vexilurz@gmail.com" Web="http://msyst.ru" Copyright="(c) Vexilurz, 2014-2018" Company="Msyst" Remark="Remastered from pascal file"/>
 		</Info>
 		<Schemes/>
 		<Editor/>
