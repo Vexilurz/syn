@@ -2,7 +2,7 @@
 <SynUniHighlighter Version="2.0">
 	<SyntaxColoring>
 		<Info>
-			<General Name="VHDL" Extensions="VHD, VHO, VHDL" Version="1" Revision="1" Sample="----------------------------------------------------------------------------------
+			<General Name="VHDL" Extensions="VHD VHO VHDL" Version="1" Revision="1" Sample="----------------------------------------------------------------------------------
 -- Company: Measurements Systems
 -- Engineer: Potekhin S.D. (Vexilurz)
 ----------------------------------------------------------------------------------
