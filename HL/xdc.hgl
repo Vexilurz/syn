@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<SynUniHighlighter Version="2.0">
+	<SyntaxColoring>
+		<Info>
+			<General Name="XDC constraints" Extensions="XDC" Version="1" Revision="0" Sample="create_property iob port -type string
+set_property IOB TRUE [all_inputs]
+set_property IOB TRUE [all_outputs]
+
+##for internal clock:
+create_clock -period 5.000 -name sys_clk_p [get_ports sys_clk_p]
+set_property IOSTANDARD DIFF_SSTL15 [get_ports sys_clk_p]
+set_property VCCAUX_IO DONTCARE [get_ports sys_clk_p]
+set_property PACKAGE_PIN AD11 [get_ports sys_clk_n]
+set_property PACKAGE_PIN AD12 [get_ports sys_clk_p]
+set_property IOSTANDARD DIFF_SSTL15 [get_ports sys_clk_n]
+
+##for external clock:
+#create_clock -period 100.000 -name sys_clk_p [get_ports sys_clk_p]
+#set_property IOSTANDARD DIFF_SSTL15 [get_ports sys_clk_p]
+#set_property VCCAUX_IO DONTCARE [get_ports sys_clk_p]
+#set_property PACKAGE_PIN L25 [get_ports sys_clk_p]
+#set_property PACKAGE_PIN K25 [get_ports sys_clk_n]
+#set_property IOSTANDARD DIFF_SSTL15 [get_ports sys_clk_n]
+
+set_property CLOCK_DEDICATED_ROUTE BACKBONE [get_nets mainDCM.Inst_DCM_diff/inst/clk_in1_dcm_diff]" History=""/>
+			<Author Name="Vexilurz" Mail="vexilurz@gmail.com" Web="http://msyst.ru" Copyright="(c) Vexilurz, 2018" Company="Msyst" Remark="https://github.com/Vexilurz/syn"/>
+		</Info>
+		<Schemes/>
+		<Editor/>
+		<MainRules Name="SyntaxColoring" Style="Root">
+			<Attributes Foreground="clNone" Background="$80000005"/>
+			<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+			<SubRules>
+				<Range Name="Remarks #" CaseSensitive="True" Style="">
+					<Attributes Foreground="clGreen" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="False"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="#"/>
+					</MultiTokens>
+					<SubRules>
+						<Set Name="Russian symbols" Enabled="True" Style="" Symbols="АБВГДЕЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюя" Quantity="0">
+							<Attributes Foreground="clGreen" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+						</Set>
+					</SubRules>
+				</Range>
+				<Range Name="Strings" Style="Strings">
+					<Attributes Foreground="clGray" Background="$80000005" ParentBackground="True"/>
+					<Delimiters Value="!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\]^`{|}~"/>
+					<OpenToken StartLine="" PartOfTerm="Right"/>
+					<CloseToken StartLine="" PartOfTerm="Right"/>
+					<Properties CloseOnEol="True"/>
+					<MultiTokens>
+						<Tokens Open="&quot;" Close="&quot;"/>
+					</MultiTokens>
+					<SubRules>
+						<KeyList Name="Symbols ''" Enabled="True" Style="" Words="''
+">
+							<Attributes Foreground="clGray" Background="$80000005" ParentForeground="True" ParentBackground="True"/>
+						</KeyList>
+					</SubRules>
+				</Range>
+				<KeyList Name="XDC Terms" Enabled="True" Style="" Words="port
+type
+to
+get_pins
+set_clock_groups
+logically_exclusive
+divide_by
+source
+max
+min
+add_delay
+include_generated_clocks
+set_false_path
+from
+create_generated_clock
+set_input_delay
+clock
+get_clocks
+get_nets
+set_property
+get_ports
+create_property
+create_clock
+period
+name
+true
+false
+">
+					<Attributes Foreground="clBlue" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="XDC types" Enabled="True" Style="" Words="string
+all_inputs
+all_outputs
+CLOCK_DEDICATED_ROUTE
+IOSTANDARD
+VCCAUX_IO
+PACKAGE_PIN
+PULLUP
+PULLDOWN
+bit
+bit_vector
+boolean
+character
+integer
+line
+natural
+positive
+real
+severity_level
+side
+std_logic
+std_logic_vector
+std_ulogic
+std_ulogic_vector
+text
+time
+ext
+sxt
+signed
+unsigned
+conv_integer
+conv_std_logic_vector
+conv_signed
+rising_edge
+">
+					<Attributes Foreground="$00D700D7" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="Symbols" Enabled="True" Style="" Words="..
+:
+&lt;
+&gt;
+=
+/
+*
+.
+,
+-
++
+(
+)
+[
+]
+">
+					<Attributes Foreground="clNavy" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<KeyList Name="XDC types2" Enabled="True" Style="" Words="DIFF_SSTL15
+DONTCARE
+LVCMOS25
+LVCMOS18
+LVCMOS33
+LVCMOS15
+LVDS_25
+LVDS_18
+LVDS_15
+">
+					<Attributes Foreground="clMaroon" Background="$80000005" ParentBackground="True"/>
+				</KeyList>
+				<Set Name="Numbers" Enabled="True" Style="" Symbols="0123456789" Quantity="0">
+					<Attributes Foreground="clMaroon" Background="$80000005" ParentBackground="True"/>
+				</Set>
+				<Set Name="float" Enabled="True" Style="" Symbols=".0123456789" Quantity="0">
+					<Attributes Foreground="clMaroon" Background="$80000005" ParentBackground="True"/>
+				</Set>
+			</SubRules>
+		</MainRules>
+	</SyntaxColoring>
+	<CodeFolding>
+		<FoldRegion Name="begin" Type="1">
+			<OpenToken Symbol="BEGIN"/>
+			<CloseToken Symbol="END"/>
+			<Properties AddEnding="True" WholeWords="True"/>
+			<SubRegions/>
+		</FoldRegion>
+	</CodeFolding>
+	<CustomData>
+		<Entry Name="CommentLine" Value="#"/>
+	</CustomData>
+</SynUniHighlighter>
