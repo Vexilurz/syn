@@ -38,8 +38,8 @@ AGAIN" History=""/>
 			<Attributes Foreground="clBlack" Background="clWhite"/>
 			<Delimiters Value=""/>
 			<SubRules>
-				<Range Name="Remarks //" CaseSensitive="True" Style="Remarks //">
-					<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True" Style="I"/>
+				<Range Name="Remarks //" CaseSensitive="True" Style="">
+					<Attributes Foreground="clGreen" Background="clWhite" ParentBackground="True"/>
 					<Delimiters Value=""/>
 					<OpenToken StartLine="" PartOfTerm="Right"/>
 					<CloseToken StartLine="" PartOfTerm="False"/>
@@ -467,6 +467,9 @@ X0Y0
 XCHG
 XOR
 INLINE
+STRUCT
+END-STRUCT
+--
 ">
 					<Attributes Foreground="clNavy" Background="clWhite" Style="B"/>
 				</KeyList>
