@@ -2,7 +2,7 @@
 <SynUniHighlighter Version="2.0">
 	<SyntaxColoring>
 		<Info>
-			<General Name="C++ Source" Extensions="C CPP H HPP CXX" Version="1" Revision="3" Sample="// Syntax Highlighting
+			<General Name="C++ Source" Extensions="C CPP H HPP CXX INO" Version="1" Revision="3" Sample="// Syntax Highlighting
 #include &lt;iostream.h&gt;
 
 int a[] = {1, 2, 3};
