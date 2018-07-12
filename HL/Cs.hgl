@@ -190,6 +190,7 @@ partial
 where
 override
 abstract
+unsafe
 ">
 					<Attributes Foreground="clBlue" Background="clWhite" ParentBackground="True"/>
 				</KeyList>
